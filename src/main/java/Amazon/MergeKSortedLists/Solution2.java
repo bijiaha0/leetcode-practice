@@ -1,0 +1,42 @@
+package Amazon.MergeKSortedLists;
+import java.util.Comparator;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
+/**
+ * https://www.jiuzhang.com/solution/merge-k-sorted-lists/
+ * 重点掌握
+ */
+//heap
+public class Solution2 {
+    private Comparator<ListNode> ListNodeComparator = new Comparator<ListNode>() {
+        public int compare(ListNode left, ListNode right) {
+            return left.val - right.val;
+        }
+    };
+
+    public ListNode mergeKLists(List<ListNode> lists) {
+        if (lists == null || lists.size() == 0) {
+            return null;
+        }
+
+        Queue<ListNode> heap = new PriorityQueue<ListNode>(lists.size(), ListNodeComparator);
+        for (int i = 0; i < lists.size(); i++) {
+            if (lists.get(i) != null) {
+                heap.add(lists.get(i));
+            }
+        }
+
+        ListNode dummy = new ListNode(0);
+        ListNode tail = dummy;
+        while (!heap.isEmpty()) {
+            ListNode head = heap.poll();
+            tail.next = head;
+            tail = head;//尾巴
+            if (head.next != null) {
+                heap.add(head.next);
+            }
+        }
+        return dummy.next;
+    }
+}
