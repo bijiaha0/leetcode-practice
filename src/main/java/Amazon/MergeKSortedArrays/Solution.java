@@ -1,4 +1,5 @@
 package Amazon.MergeKSortedArrays;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -7,22 +8,22 @@ import java.util.Queue;
  */
 class Element {
     public int row, col, val;
+
     Element(int row, int col, int val) {
         this.row = row;
         this.col = col;
         this.val = val;
     }
 }
+
 public class Solution {
+
     private Comparator<Element> ElementComparator = new Comparator<Element>() {
         public int compare(Element left, Element right) {
             return left.val - right.val;
         }
     };
-    /**
-     * @param arrays k sorted integer arrays
-     * @return a sorted array
-     */
+
     public int[] mergekSortedArrays(int[][] arrays) {
         if (arrays == null) {
             return new int[0];
