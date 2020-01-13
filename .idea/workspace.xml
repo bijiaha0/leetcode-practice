@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbaa8b0e-32c3-42d5-8c8c-21924fa50a70" name="Default Changelist" comment="" />
+    <list default="true" id="fbaa8b0e-32c3-42d5-8c8c-21924fa50a70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,94 +24,89 @@
       <FILTER>SuanFaNeiGong.Heap.IndexHeapAdvance.*</FILTER>
     </SUITE>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="632137525">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="137" />
+          <entry key="project.open.time.0" value="18" />
+          <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="36" />
+          <entry key="project.open.time.4" value="64" />
+          <entry key="project.open.time.5" value="11" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="138" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="2" />
+          <entry key="java" value="796" />
+          <entry key="jpg" value="1" />
+          <entry key="png" value="28" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="29" />
+          <entry key="JAVA" value="796" />
+          <entry key="PLAIN_TEXT" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="2" />
+          <entry key="java" value="36698" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="36698" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Algorithm" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/KthLargestElement/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/MinimumSizeSubarraySum/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="29" selection-start-line="29" selection-end-line="48" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tju/basic_class_01/Code_04_QuickSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1873">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/QuickSort/Solution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/QuickSort/Solution1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="32" lean-forward="true" selection-start-line="1" selection-end-line="32" />
+            <state relative-caret-position="-3">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LongestIncreasingSubsequence/Solution.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" selection-start-line="4" selection-end-line="21" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LongestIncreasingSubsequence/Solution2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LongestIncreasingSubsequence/Solution1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-672">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ReverseList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zheng/linkedList/LinkedListAlgo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="100" column="11" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
+            <state relative-caret-position="345">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -124,90 +123,118 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Point</find>
-      <find>并查集</find>
-      <find>路径压缩</find>
+      <find>loadBalance</find>
+      <find>decode</find>
+      <find>searchF</find>
       <find>二分法</find>
-      <find>最小索引</find>
-      <find>sys</find>
-      <find>sum</find>
-      <find>扫描</find>
-      <find>换钱</find>
-      <find>money</find>
-      <find>分数</find>
-      <find>糖果</find>
-      <find>长度</find>
-      <find>candy</find>
-      <find>绳子</find>
-      <find>金条</find>
-      <find>层序遍历</find>
-      <find>深度</find>
-      <find>两个有序</find>
-      <find>二分</find>
-      <find>快排模板</find>
-      <find>反转</find>
-      <find>快排</find>
+      <find>pow</find>
+      <find>powx</find>
+      <find>sparseMa</find>
+      <find>rotateIm</find>
+      <find>search2</find>
+      <find>matrixI</find>
+      <find>regions</find>
+      <find>Factorization</find>
+      <find>WordSquares</find>
+      <find>nearest</find>
+      <find>count</find>
+      <find>Jump</find>
+      <find>russi</find>
+      <find>flipp</find>
+      <find>高度</find>
+      <find>i</find>
+      <find>并查集</find>
+      <find>sqrt</find>
+      <find>bit</find>
+      <find>数位</find>
+      <find>fib</find>
+      <find>方向</find>
+      <find>rain</find>
+      <find>Collections</find>
+      <find>Thread</find>
+      <find>shuff</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java/Amazon/KSum</dir>
+      <dir>$PROJECT_DIR$/src/main/java/LeetCode</dir>
+      <dir>$PROJECT_DIR$/src/main/java/Amazon</dir>
+      <dir>$PROJECT_DIR$/src/main/java/Amazon/SearchInRotatedSortedArray</dir>
+      <dir>$PROJECT_DIR$/src/main/java/Amazon/ConnectingGraph</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="algorithm" />
+      </map>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/Amazon/PowXN/Solution.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/ThreeSumClosest/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/FourSum/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/TwoSumDifferenceEqualsToTarget/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/TwoSumDifferenceEqualsToTarget/Solution1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/TwoSumClosest/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/ValidPalindrome/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/MoveZeroes/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/RemoveDuplicateNumbersInArray/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/RemoveDuplicateNumbersInArray/Solution1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/PartitionArrayByOddAndEven/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/InterleavingPositiveAndNegativeNumbers/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/SortLettersByCase/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/SortColors/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/SortColorsII/Solution1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SuanFaNeiGong/Heap/readme.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/SuanFaNeiGong/Heap/IndexHeapAdvance/IndexMaxHeap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SuanFaNeiGong/Heap/IndexHeapAdvance/IndexHeapSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SuanFaNeiGong/Heap/IndexHeapAdvance/SortTestHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SuanFaNeiGong/Heap/IndexMinHeap/IndexMinHeapSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/LongestSubstringWithoutRepeatingCharacters/LongestSubstringWithoutRepeatingCharacters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/NumberOfAirplanesInTheSky/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zheng/ceshi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/ChangeMoney.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/EditDistance/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/advanced_class_07/Code_03_CandyProblem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/WoodCut/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/WoodCut/Solution1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/FindMinimumInRotatedSortedArray/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/Sqrt/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LeetCode/MaximumProductOfThreeNumbers/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LeetCode/ContainerWithMostWater/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LeetCode/TopKFrequentElements/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LeetCode/SortTransformedArray/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/MajorityElement/Solution2.java" />
         <option value="$PROJECT_DIR$/src/main/java/Amazon/BinaryTreeLevelOrderTraversal/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LeetCode/BinaryTreeRightSideView/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/WindowSum/Solution1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/SlidingWindowMedian/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LeetCode/SubarrayProductLessThanK/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/MinimumSizeSubarraySum/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ReverseList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PlayWithAlgorithmInterview/AboutLinkedList/ReverseLinkedList/Solution2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zheng/linkedList/LinkedListAlgo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/BinarySearch/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/BinaryTreeLevelOrderTraversal/Solution2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/MaximumDepthOfBinaryTree/Solution2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/MinimumDepthOfBinaryTree/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/Amazon/MaximumDepthOfBinaryTree/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/FirstPositionOfTarget/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/LastPositionOfTarget/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/KthLargestElement/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LeetCode/Candy/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/QuickSort/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Amazon/QuickSort/Solution1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/GenerateParentheses/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/Sqrt/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/SqrtXII/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/WordSearchII/Solution1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/Trie/Trie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/NumberOf1Bits/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/PowerOfTwo/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/ClimbingStairs/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/ClimbingStairs/Solution2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LeetCode/Triangle/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LeetCode/MaximumProductSubarray/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/UnionFind/uf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/UglyNumberII/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/FriendCircles/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/NumberOfIslands/Solution1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/PowXN/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/PathSumIII/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/ThreeSum/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/ReverseInteger/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/StringToIntegerAtoi/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/ContainerWithMostWater/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/LongestCommonPrefix/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/SearchInsertPosition/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/RotateImage/Solution1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/RotateImage/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/SortList/Solution3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/SortList/Solution2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/SortList/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/FindPeakElement/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LeetCode/MiddleOfTheLinkedList/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/SelectARandomNumberFromStream/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/Shuffle/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LeetCode/BinarySearch/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/TopKLargestNumbers/Solution1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LeetCode/QuickSort/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/TopKLargestNumbers/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/TwoSum/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LeetCode/AddTwoNumbers/addTwoNumbers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Amazon/MinimumSizeSubarraySum/Solution.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -215,11 +242,16 @@
         <option name="mavenHome" value="/usr/local/apache-maven-3.5.0" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="width" value="1269" />
+    <option name="height" value="727" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -329,13 +361,17 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -376,7 +412,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="LongestIncreasingSubsequence" type="462c0819:PsiDirectoryNode" />
+              <item name="MinimumSizeSubarraySum" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -385,21 +421,39 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Thread&#9;PSI&#9;JAVA://java.lang.Thread&#10;Collections&#9;PSI&#9;JAVA://java.util.Collections&#10;Add&#9;PSI&#9;JAVA://addTwoNumbers" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555257316439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568723317712" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/LeetCode/CloneGraph" />
+      <recent name="$PROJECT_DIR$/src/main/java/Amazon/Heapify" />
+      <recent name="$PROJECT_DIR$/src/main/java/Amazon/KthLargestElement" />
       <recent name="$PROJECT_DIR$/src/main/java/SuanFaNeiGong/Heap" />
       <recent name="$PROJECT_DIR$/src/main/java/Amazon" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Amazon.BFS" />
+      <recent name="LeetCode.GuessNumberHigherOrLower" />
+      <recent name="LeetCode.MaximalRectangle" />
+      <recent name="LeetCode.SlidingWindowMaximum" />
+      <recent name="LeetCode.ValidPalindrome" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/Amazon/BinaryTreeUpsideDown" />
+      <recent name="$PROJECT_DIR$/src/main/java/Amazon" />
+      <recent name="$PROJECT_DIR$/src/main/java/LeetCode" />
+      <recent name="$PROJECT_DIR$/src/main/java/LeetCode/AddTwoNumbers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -414,13 +468,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution (2)">
-    <configuration name="Code_03_CandyProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="advanced_class_07.Code_03_CandyProblem" />
+  <component name="RunManager" selected="Application.Graph">
+    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Amazon.BFSAndDFS.Graph" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="advanced_class_07.*" />
+          <option name="PATTERN" value="Amazon.BFSAndDFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -429,24 +483,11 @@
       </method>
     </configuration>
     <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Amazon.WoodCut.Solution" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.WildcardMatching.Solution" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Amazon.WoodCut.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Amazon.MinimumSizeSubarraySum.Solution" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Amazon.MinimumSizeSubarraySum.*" />
+          <option name="PATTERN" value="Amazon.WildcardMatching.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -455,11 +496,11 @@
       </method>
     </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode.SubarrayProductLessThanK.Solution" />
+      <option name="MAIN_CLASS_NAME" value="PermutationsII.Solution" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LeetCode.SubarrayProductLessThanK.*" />
+          <option name="PATTERN" value="PermutationsII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -467,12 +508,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Amazon.WoodCut.Solution1" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SubSetII.Solution" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Amazon.WoodCut.*" />
+          <option name="PATTERN" value="SubSetII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -480,13 +521,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="Algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.Solution (1)" />
+      <item itemvalue="Application.Graph" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution (2)" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.Solution1" />
+        <item itemvalue="Application.Graph" />
         <item itemvalue="Application.Solution (1)" />
-        <item itemvalue="Application.Code_03_CandyProblem" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -535,37 +587,214 @@
       <workItem from="1554531098083" duration="61000" />
       <workItem from="1554531271315" duration="219000" />
       <workItem from="1555251811662" duration="4325000" />
+      <workItem from="1555646437223" duration="1293000" />
+      <workItem from="1555681895238" duration="674000" />
+      <workItem from="1555686999057" duration="671000" />
+      <workItem from="1555751969141" duration="1478000" />
+      <workItem from="1555807934784" duration="1054000" />
+      <workItem from="1555893763231" duration="368000" />
+      <workItem from="1555985765853" duration="2256000" />
+      <workItem from="1555992861209" duration="2166000" />
+      <workItem from="1555999901429" duration="828000" />
+      <workItem from="1556108800070" duration="1985000" />
+      <workItem from="1556119875996" duration="1828000" />
+      <workItem from="1556153188281" duration="888000" />
+      <workItem from="1556159461568" duration="6724000" />
+      <workItem from="1556176877988" duration="456000" />
+      <workItem from="1556617947700" duration="622000" />
+      <workItem from="1558758984043" duration="341000" />
+      <workItem from="1558759617209" duration="1758000" />
+      <workItem from="1558765570999" duration="1181000" />
+      <workItem from="1558767453005" duration="8640000" />
+      <workItem from="1558837779081" duration="1246000" />
+      <workItem from="1558840049890" duration="868000" />
+      <workItem from="1558865173365" duration="6590000" />
+      <workItem from="1558880574154" duration="2452000" />
+      <workItem from="1563114263990" duration="3341000" />
+      <workItem from="1563409219005" duration="14172000" />
+      <workItem from="1563449950445" duration="4291000" />
+      <workItem from="1563462091754" duration="3295000" />
+      <workItem from="1563492646947" duration="6276000" />
+      <workItem from="1563514279660" duration="1499000" />
+      <workItem from="1563591416275" duration="18635000" />
+      <workItem from="1563625632566" duration="20224000" />
+      <workItem from="1563688858414" duration="782000" />
+      <workItem from="1563689766183" duration="5827000" />
+      <workItem from="1563725895251" duration="60000" />
+      <workItem from="1563726751513" duration="2269000" />
+      <workItem from="1563762969585" duration="6066000" />
+      <workItem from="1563797448191" duration="7934000" />
+      <workItem from="1563837419943" duration="773000" />
+      <workItem from="1563858557517" duration="2696000" />
+      <workItem from="1563883893883" duration="7214000" />
+      <workItem from="1563896813308" duration="12179000" />
+      <workItem from="1563964999517" duration="2397000" />
+      <workItem from="1563979674868" duration="3217000" />
+      <workItem from="1564015479011" duration="5373000" />
+      <workItem from="1564050863734" duration="4577000" />
+      <workItem from="1564065069346" duration="223000" />
+      <workItem from="1564071938508" duration="37000" />
+      <workItem from="1564103063915" duration="6449000" />
+      <workItem from="1564191188175" duration="1000" />
+      <workItem from="1564240836039" duration="1602000" />
+      <workItem from="1564637857557" duration="3571000" />
+      <workItem from="1564673593212" duration="334000" />
+      <workItem from="1564675428085" duration="2519000" />
+      <workItem from="1564681401713" duration="47000" />
+      <workItem from="1564705019574" duration="22000" />
+      <workItem from="1564740633296" duration="5340000" />
+      <workItem from="1564804426288" duration="7011000" />
+      <workItem from="1564826916467" duration="442000" />
+      <workItem from="1565048394326" duration="3774000" />
+      <workItem from="1565057601040" duration="605000" />
+      <workItem from="1565071654383" duration="2958000" />
+      <workItem from="1565170720532" duration="12610000" />
+      <workItem from="1565259368378" duration="36000" />
+      <workItem from="1565259590951" duration="1274000" />
+      <workItem from="1565341670516" duration="2093000" />
+      <workItem from="1565396187640" duration="10403000" />
+      <workItem from="1565434893887" duration="1667000" />
+      <workItem from="1565437376083" duration="2584000" />
+      <workItem from="1565447694129" duration="1553000" />
+      <workItem from="1565520248951" duration="19867000" />
+      <workItem from="1565658660720" duration="12450000" />
+      <workItem from="1565698881433" duration="7438000" />
+      <workItem from="1565769381034" duration="545000" />
+      <workItem from="1565798501513" duration="13000" />
+      <workItem from="1565966916322" duration="6609000" />
+      <workItem from="1565981999558" duration="9000" />
+      <workItem from="1566112662192" duration="471000" />
+      <workItem from="1566120535854" duration="2308000" />
+      <workItem from="1566144044639" duration="2967000" />
+      <workItem from="1566182281613" duration="3779000" />
+      <workItem from="1566210660439" duration="7046000" />
+      <workItem from="1566267778013" duration="10435000" />
+      <workItem from="1566316629227" duration="8735000" />
+      <workItem from="1566393917931" duration="2136000" />
+      <workItem from="1566444530338" duration="925000" />
+      <workItem from="1566453273110" duration="1917000" />
+      <workItem from="1566463397863" duration="5093000" />
+      <workItem from="1566484086873" duration="831000" />
+      <workItem from="1566488585464" duration="469000" />
+      <workItem from="1566536805891" duration="6284000" />
+      <workItem from="1566561518607" duration="1291000" />
+      <workItem from="1566567840119" duration="88000" />
+      <workItem from="1566568287676" duration="1504000" />
+      <workItem from="1566575390416" duration="387000" />
+      <workItem from="1566632455230" duration="395000" />
+      <workItem from="1566636907062" duration="3032000" />
+      <workItem from="1566653207447" duration="5625000" />
+      <workItem from="1566699047025" duration="3536000" />
+      <workItem from="1566710673048" duration="3680000" />
+      <workItem from="1566724592773" duration="787000" />
+      <workItem from="1566799001971" duration="2000" />
+      <workItem from="1566825439707" duration="58000" />
+      <workItem from="1566828964258" duration="308000" />
+      <workItem from="1566829537252" duration="168000" />
+      <workItem from="1566893811780" duration="39000" />
+      <workItem from="1566895479259" duration="1234000" />
+      <workItem from="1567036842638" duration="512000" />
+      <workItem from="1567037426754" duration="918000" />
+      <workItem from="1567078847176" duration="1410000" />
+      <workItem from="1567081847243" duration="7047000" />
+      <workItem from="1567093131332" duration="361000" />
+      <workItem from="1567094332239" duration="2212000" />
+      <workItem from="1567126497596" duration="2561000" />
+      <workItem from="1567144272125" duration="1244000" />
+      <workItem from="1567155157676" duration="12063000" />
+      <workItem from="1567229101991" duration="1657000" />
+      <workItem from="1567243517142" duration="6623000" />
+      <workItem from="1567253523224" duration="2092000" />
+      <workItem from="1567261545609" duration="78000" />
+      <workItem from="1567331045100" duration="13861000" />
+      <workItem from="1567357970709" duration="920000" />
+      <workItem from="1567388649491" duration="2210000" />
+      <workItem from="1567393866408" duration="194000" />
+      <workItem from="1567396958871" duration="599000" />
+      <workItem from="1567439626335" duration="10677000" />
+      <workItem from="1567502156826" duration="2218000" />
+      <workItem from="1567508311797" duration="1770000" />
+      <workItem from="1567513074489" duration="8176000" />
+      <workItem from="1567699074305" duration="6149000" />
+      <workItem from="1567733876424" duration="11234000" />
+      <workItem from="1567747752284" duration="6154000" />
+      <workItem from="1567794558818" duration="4043000" />
+      <workItem from="1567799489044" duration="1339000" />
+      <workItem from="1567801397453" duration="31000" />
+      <workItem from="1567802288443" duration="86000" />
+      <workItem from="1567802500376" duration="93000" />
+      <workItem from="1567802686547" duration="786000" />
+      <workItem from="1567838489501" duration="897000" />
+      <workItem from="1567846518512" duration="2002000" />
+      <workItem from="1567925934291" duration="2590000" />
+      <workItem from="1567932420551" duration="1996000" />
+      <workItem from="1567998687031" duration="879000" />
+      <workItem from="1568118771163" duration="711000" />
+      <workItem from="1568123497055" duration="329000" />
+      <workItem from="1568130291203" duration="2179000" />
+      <workItem from="1568171331821" duration="100000" />
+      <workItem from="1568177127851" duration="46000" />
+      <workItem from="1568294855422" duration="1081000" />
+      <workItem from="1568306156947" duration="162000" />
+      <workItem from="1568337096288" duration="4461000" />
+      <workItem from="1568393827095" duration="90000" />
+      <workItem from="1568397192896" duration="1083000" />
+      <workItem from="1568429337524" duration="1331000" />
+      <workItem from="1568431981508" duration="568000" />
+      <workItem from="1568439887328" duration="28000" />
+      <workItem from="1568564063752" duration="1603000" />
+      <workItem from="1568646850507" duration="1919000" />
+      <workItem from="1568719944325" duration="168000" />
+      <workItem from="1568720201085" duration="1972000" />
+      <workItem from="1578878998468" duration="690000" />
+      <workItem from="1578881451585" duration="2744000" />
     </task>
+    <task id="LOCAL-00001" summary="add">
+      <created>1555682528840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555682528840</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更新">
+      <created>1556176964481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556176964481</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209692000" />
+    <option name="totallyTimeSpent" value="717719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1269" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25250357" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.17" visible="true" weight="0.32674897" />
+      <window_info id="Structure" order="1" sideWeight="0.83028287" side_tool="true" weight="0.23471883" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.8275" side_tool="true" weight="0.36756316" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3277512" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3652531" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997175" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31389365" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17213115" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39590445" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Problems" order="9" weight="0.32874015" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Problems" order="9" weight="0.328084" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.9211823" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.328084" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32968536" />
+      <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.32844037" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -573,7 +802,7 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Database" order="7" weight="0.48609433" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="right" id="Maven" order="9" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3297568" />
@@ -582,371 +811,359 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add" />
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>cur.val</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>head.val</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/zheng/ceshi.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/PathSumIII/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="42" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="230">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SuanFaNeiGong/SortBasic/SelectionSortUsingComparable/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/Triangle/Solution.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="345">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/advanced_class_07/Code_03_CandyProblem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3904">
-          <caret line="122" column="9" selection-start-line="109" selection-start-column="8" selection-end-line="122" selection-end-column="9" />
+        <state relative-caret-position="115">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tju/basic_class_08/Code_07_BestArrange.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="92">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tju/basic_class_08/Code_06_LowestLexicography.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tju/basic_class_08/Code_08_MaxABSBetweenLeftAndRight.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/ThreeSum/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="138">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tju/basic_class_08/Gas.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/Triangle/Solution3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="23">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tju/class_07/LowestLexicography.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LongestSubstringWithoutRepeatingCharacters/LongestSubstringWithoutRepeatingCharacters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="253">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tju/basic_class_08/Money.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/ReverseInteger/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="23">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/WordLadder/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/StringToIntegerAtoi/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/WoodCut/Solution1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/ClassicalBinarySearch/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/FindPeakElement/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/FindPeakElement/Solution1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="5" selection-start-line="5" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/FindMinimumInRotatedSortedArray/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="6" selection-start-line="6" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/Sqrt/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/MaximumProductOfThreeNumbers/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/ContainerWithMostWater/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/TopKFrequentElements/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/SortTransformedArray/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/BinaryTreeLevelOrderTraversal/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/BinaryTreeRightSideView/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
-          <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#296#314#0" expanded="true" />
-            <element signature="e#771#781#0" expanded="true" />
-            <element signature="e#605#614#0" expanded="true" />
-            <element signature="e#1463#1472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/WindowSum/Solution1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
+        <state relative-caret-position="23">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SubarraySum/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/TrappingRainWaterII/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
+        <state relative-caret-position="575">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/TrappingRainWater/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/ContainerWithMostWater/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LongestCommonPrefix/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SearchInsertPosition/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/RotateImage/Solution1.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/RotateImage/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zheng/linkedList/SinglyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7049">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SubarraySumII/屏幕快照 2019-02-28 下午2.19.00.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SubarraySumII/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/LinkedListCycle/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="56">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SlidingWindowAverageFromDataStream/MovingAverage01.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/LinkedListCycleII/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SlidingWindowMaximum/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SlidingWindowMedian/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-745">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/WindowSum/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/BinaryTreeInorderTraversal/Solution1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PlayWithAlgorithmInterview/AboutLinkedList/ReverseLinkedList/Solution2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/WoodCut/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1187">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/MaximumDepthOfBinaryTree/Solution2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/MinimumSizeSubarraySum/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="78" column="26" lean-forward="true" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/SubarrayProductLessThanK/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/MaximumDepthOfBinaryTree/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/BinarySearch/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/FirstPositionOfTarget/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LastPositionOfTarget/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/Candy/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReverseList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="149">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zheng/linkedList/LinkedListAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="100" column="11" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
+        <state relative-caret-position="-2155">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tju/basic_class_01/Code_04_QuickSort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/FindMedian/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1873">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="172">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SortList/Solution3.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SortList/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="822">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/KthLargestElement/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/FindPeakElement/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="29" selection-start-line="29" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="159">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/QuickSort/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/MaximumSwap/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="-655">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/QuickSort/Solution1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/MaximumSwap/Solution2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="32" lean-forward="true" selection-start-line="1" selection-end-line="32" />
+        <state relative-caret-position="46">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LongestIncreasingSubsequence/Solution1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/MiddleOfTheLinkedList/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-672">
+        <state relative-caret-position="69">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SelectARandomNumberFromStream/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="464" lean-forward="true" selection-start-line="464" selection-end-line="464" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PlayWithAlgorithmInterview/StackAndQueue/OptionalBinaryTreeMorrisTraversal/PostorderSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/Shuffle/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="181" column="25" selection-start-line="181" selection-start-column="25" selection-end-line="181" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/ThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="308" column="25" selection-start-line="308" selection-start-column="25" selection-end-line="308" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/BinarySearch/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/PowXN/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="14" selection-start-line="14" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/TopKLargestNumbers/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/TwoSum/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/QuickSort/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/TopKLargestNumbers/Solution1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/TwoSum/Solution1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/ValidPalindrome/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/VaildParentheses/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LeetCode/AddTwoNumbers/addTwoNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/NextPermutation/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LongestIncreasingSubsequence/Solution2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/SymmetricTree/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="106">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LongestIncreasingSubsequence/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/LongestAbsoluteFilePath/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" selection-start-line="4" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="9">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Amazon/MinimumSizeSubarraySum/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
