@@ -4,7 +4,6 @@ package Amazon.FirstPositionUniqueCharacter;
  */
 public class Solution {
     public int firstUniqChar(String s) {
-        // Write your code here
         int[] cnt = new int[256];
         for (char c : s.toCharArray()) {
             cnt[c]++;

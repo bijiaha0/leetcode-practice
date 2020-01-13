@@ -16,7 +16,7 @@ public class Main {
         System.out.print("DFS : ");
         dfs.showPath(6);
         ShortestPath bfs = new ShortestPath(g,0);
-        System.out.print("BFS : ");
+        System.out.print("BFSAndDFS : ");
         bfs.showPath(6);
         System.out.println();
         filename = "testG1.txt";
@@ -29,7 +29,7 @@ public class Main {
         System.out.print("DFS : ");
         dfs2.showPath(3);
         ShortestPath bfs2 = new ShortestPath(g,0);
-        System.out.print("BFS : ");
+        System.out.print("BFSAndDFS : ");
         bfs.showPath(3);
     }
 }

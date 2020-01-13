@@ -1,29 +1,24 @@
 package Amazon.Trie;
 import java.util.HashMap;
-/**
- * Email: clickgwas@gmail.com
- */
 class TrieNode {
     char c;
-    HashMap<Character, TrieNode> children = new HashMap<Character, TrieNode>();
     boolean hasWord;
-    public TrieNode(){
-    }
+    HashMap<Character, TrieNode> children = new HashMap<Character, TrieNode>();
+    public TrieNode(){}
     public TrieNode(char c){
         this.c = c;
     }
 }
-
 public class Trie {
     private TrieNode root;
     public Trie() {
         root = new TrieNode();
     }
     public void insert(String word) {
-        TrieNode cur = root;
         HashMap<Character, TrieNode> curChildren = root.children;
         char[] wordArray = word.toCharArray();
         for(int i = 0; i < wordArray.length; i++){
+            TrieNode cur;
             char wc = wordArray[i];
             if(curChildren.containsKey(wc)){
                 cur = curChildren.get(wc);
@@ -38,7 +33,6 @@ public class Trie {
             }
         }
     }
-    // Returns if the word is in the trie.
     public boolean search(String word) {
         if(searchWordNodePos(word) == null){
             return false;
@@ -46,8 +40,6 @@ public class Trie {
             return true;
         else return false;
     }
-    // Returns if there is any word in the trie
-    // that starts with the given prefix.
     public boolean startsWith(String prefix) {
         if(searchWordNodePos(prefix) == null){
             return false;

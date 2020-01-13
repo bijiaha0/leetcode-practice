@@ -9,10 +9,9 @@ public class Solution {
         if (numbers == null || numbers.length < 3) {
             return -1;
         }
-
         Arrays.sort(numbers);
         int bestSum = numbers[0] + numbers[1] + numbers[2];
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length - 2; i++) {
             int start = i + 1, end = numbers.length - 1;
             while (start < end) {
                 int sum = numbers[i] + numbers[start] + numbers[end];
@@ -26,7 +25,6 @@ public class Solution {
                 }
             }
         }
-
         return bestSum;
     }
 }

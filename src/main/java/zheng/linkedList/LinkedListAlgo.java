@@ -16,20 +16,15 @@ package zheng.linkedList;
  */
 public class LinkedListAlgo {
     // 单链表反转-----非递归版本
-    public static Node reverse(Node list) {
-        Node headNode = null;
-        Node previousNode = null;
-        Node currentNode = list;
-        while (currentNode != null) {
-            Node nextNode = currentNode.next;
-            if (nextNode == null) {
-                headNode = currentNode;
-            }
-            currentNode.next = previousNode;
-            previousNode = currentNode;
-            currentNode = nextNode;
+    public Node reverse(Node head) {
+        Node pre=null,cur=head,next=null;
+        while (cur!=null){
+            next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
         }
-        return headNode;
+        return pre;
     }
     // 单链表反转-----递归版本
     public static Node reverseRec(Node head) {
@@ -47,12 +42,11 @@ public class LinkedListAlgo {
     // 链表中环的检测
     public static boolean checkCircle(Node list) {
         if (list == null) return false;
-        Node fast = list.next;
+        Node fast = list;
         Node slow = list;
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
-
             if (slow == fast) return true;
         }
         return false;

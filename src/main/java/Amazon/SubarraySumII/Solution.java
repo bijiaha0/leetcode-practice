@@ -26,15 +26,6 @@ public class Solution {
         }
         return ans;
     }
-    /*
-    * sum[i,j] 计算从i位置到j位置的和;   j位置减去i-1位置
-    * prefix[j+1] - prefix[i];
-    *
-    *          start <= prefix[j+1] - prefix[i]  <=  end
-    *
-    *            prefix[j+1] - end <= prefix[i]  <=   prefix[j+1] - start
-    *
-    * */
     public int subarraySumII(int[] A, int start, int end){
         int len = A.length;
         //prefixSum数组  ---递增
@@ -43,26 +34,13 @@ public class Solution {
         }
         int cnt =0;
         for(int i =0; i < len; i++){
-            /*
-            * 当A[i] < start的时候，
-            * 当A[i] >= start && A[i] <= end的时候,
-            * 当A[i] >= end的时候,
-            * */
             if(A[i] >= start && A[i] <= end){
                 cnt ++;
             }
-            int l = A[i]-end;//求小于等于end的最大值的下标；-----大于等于 A[i]-end的最小位置
-            int r = A[i]- start;//求大于等于start的最小值的下标。-----小于于等于 A[i]-start的最大位置
+            int l = A[i]-end;//大于等于 A[i]-end的最小位置
+            int r = A[i]- start;//小于等于 A[i]-start的最大位置-->大于等于A[i]-start+1的最小值
             cnt += find(A,len,r+1) -1 - find(A,len,l) + 1;
         }
         return cnt;
     }
 }
-/*
-因为题目要求子段和在区间 [start, end] 之间，注意此时的A数组已经发生变化，A[i]记录的是前i个数的前缀和。
-那么任何一个子段的和即使两个前缀值的差，
-假设我们让A[i]作为被减数，也就是说start <= A[i] - value <= end
-得出 value <= A[i] - start 且 A[i] - end <= value
-find(A, len, r+1) 就是找出 value <= A[i] - start 这个条件满足要求的。
-find(A, len, l) 就是找出 A[i] - end <= value 不满足这个要求的，相减就是剩下满足要求的value的个数。
-* */

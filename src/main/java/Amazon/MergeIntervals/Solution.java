@@ -34,6 +34,7 @@ public class Solution {
                 return o1.start - o2.start;
             }
         });
+        intervals.sort(Comparator.comparing(o->o.start));
         Interval last = null;
         for (Interval item : intervals) {
             if (last == null || last.end < item.start) {

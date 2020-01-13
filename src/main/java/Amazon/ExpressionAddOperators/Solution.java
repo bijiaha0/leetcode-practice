@@ -1,13 +1,6 @@
 package Amazon.ExpressionAddOperators;
 import java.util.ArrayList;
 import java.util.List;
-/**
- * Author: bijiaha0
- * Date: 2019-02-23
- * Time: 5:11 PM
- * Email: clickgwas@gmail.com
- * https://www.lintcode.com/problem/expression-add-operators/description
- */
 public class Solution {
     void dfs(String num, int target, int start, String str, long sum, long lastF, List<String> ans) {
         if (start == num.length()) {
@@ -37,7 +30,6 @@ public class Solution {
         }
     }
     public List<String> addOperators(String num, int target) {
-        // Write your code here
         List<String> ans = new ArrayList<>();
         dfs(num, target, 0, "", 0, 0, ans);
         return ans;

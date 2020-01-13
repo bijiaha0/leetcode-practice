@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.LinkedList;
 import java.util.HashMap;
 
-/// Bi-directional BFS
+/// Bi-directional BFSAndDFS
 /// No need to calculate all pairs similarity
 /// Time Complexity: O(n*n)
 /// Space Complexity: O(n)
@@ -19,7 +19,7 @@ public class Solution4 {
         if(!wordList.contains(endWord))
             return 0;
 
-        // bi-derectional-BFS
+        // bi-derectional-BFSAndDFS
         LinkedList<String> qStart = new LinkedList<>();
         LinkedList<String> qEnd = new LinkedList<>();
 

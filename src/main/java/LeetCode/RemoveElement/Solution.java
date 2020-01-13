@@ -14,4 +14,14 @@ public class Solution {
         }
         return j;
     }
+    public int removeElement1(int[] nums, int val) {
+        int slow= 1, fast= 0;
+        for(;fast < nums.length;fast++){
+            if(nums[fast]!=val){
+                nums[slow] = nums[fast];
+                slow++;
+            }
+        }
+        return slow;
+    }
 }

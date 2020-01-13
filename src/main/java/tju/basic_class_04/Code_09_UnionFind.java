@@ -57,7 +57,5 @@ public class Code_09_UnionFind {
 			}
 		}
 	}
-	public static void main(String[] args) {
-	}
 
 }

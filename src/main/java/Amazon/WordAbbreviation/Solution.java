@@ -8,20 +8,18 @@ public class Solution {
     public String[] wordsAbbreviation(String[] dict) {
         int len = dict.length;
         String[] ans = new String[len];
-        int[] prefix = new int[len];
+        int round = 1;
         Map<String, Integer> count = new HashMap<>();
         for (int i = 0; i < len; i++) {
-            prefix[i] = 1;
-            ans[i] = getAbbr(dict[i], 1);
-            //当Map集合中有这个key时,就使用这个key值,如果没有就使用默认值defaultValue
+            ans[i] = getAbbr(dict[i], round);
             count.put(ans[i], count.getOrDefault(ans[i], 0) + 1);
         }
         while (true) {
             boolean unique = true;
+            round++;
             for (int i = 0; i < len; i++) {
                 if (count.get(ans[i]) > 1) {
-                    prefix[i]++;
-                    ans[i] = getAbbr(dict[i], prefix[i]);
+                    ans[i] = getAbbr(dict[i], round);
                     count.put(ans[i], count.getOrDefault(ans[i], 0) + 1);
                     unique = false;
                 }
@@ -36,8 +34,6 @@ public class Solution {
         if (p >= s.length() - 2) {
             return s;
         }
-        String ans;
-        ans = s.substring(0, p) + (s.length() - 1 - p) + s.charAt(s.length() - 1);
-        return ans;
+        return s.substring(0, p) + (s.length() - 1 - p) + s.charAt(s.length() - 1);
     }
 }

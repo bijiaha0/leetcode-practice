@@ -2,45 +2,25 @@ package Amazon.CombinationSumII;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-/**
- * Email: clickgwas@gmail.com
- * https://www.jiuzhang.com/solutions/combination-sum-ii/
- */
 public class Solution {
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        List<List<Integer>> results = new ArrayList<>();
-        if (candidates == null || candidates.length == 0) {
-            return results;
-        }
-
-        Arrays.sort(candidates);
-        List<Integer> combination = new ArrayList<Integer>();
-        helper(candidates, 0, combination, target, results);
-
-        return results;
+    public List<List<Integer>> combinationSum2(int[] cand, int target) {
+        Arrays.sort(cand);
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        List<Integer> path = new ArrayList<Integer>();
+        dfs(cand, 0, target, path, res);
+        return res;
     }
-
-    private void helper(int[] candidates,
-                        int startIndex,
-                        List<Integer> combination,
-                        int target,
-                        List<List<Integer>> results) {
+    void dfs(int[] cand, int cur, int target, List<Integer> path, List<List<Integer>> res) {
         if (target == 0) {
-            results.add(new ArrayList<Integer>(combination));
-            return;
+            res.add(new ArrayList(path));
+            return ;
         }
-
-        for (int i = startIndex; i < candidates.length; i++) {
-            //
-            if (i != startIndex && candidates[i] == candidates[i - 1]) {
-                continue;
-            }
-            if (target < candidates[i]) {
-                break;
-            }
-            combination.add(candidates[i]);
-            helper(candidates, i + 1, combination, target - candidates[i], results);
-            combination.remove(combination.size() - 1);
+        if (target < 0) return;
+        for (int i = cur; i < cand.length; i++){
+            if (i > cur && cand[i] == cand[i-1]) continue;
+            List<Integer> tmp=new ArrayList<>(path);
+            tmp.add(cand[i]);
+            dfs(cand, i+1, target- cand[i], tmp, res);
         }
     }
 }

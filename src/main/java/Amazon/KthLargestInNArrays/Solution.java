@@ -1,19 +1,8 @@
 package Amazon.KthLargestInNArrays;
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
-
-/**
- * Email: clickgwas@gmail.com
- * https://www.lintcode.com/problem/kth-largest-in-n-arrays/description
- * 对每个数组排序，然后将每个数组的最小元素加入到优先队列中，每次从优先队列中pop出一个元素，然后push进同组的下一个元素，直到第k个
- */
-/*
-In n=2 arrays [[9,3,2,4,7],[1,2,3,4,8]], the 3rd largest element is 7.
-In n=2 arrays [[9,3,2,4,8],[1,2,3,4,2]], the 1st largest element is 9, 2nd largest element is 8, 3rd largest element is 4 and etc.
-* */
 class Node {
     public int value, from_id, index;
     public Node(int _v, int _id, int _i) {

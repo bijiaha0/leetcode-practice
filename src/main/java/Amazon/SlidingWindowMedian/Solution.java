@@ -3,13 +3,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.PriorityQueue;
-/*
-* https://www.jiuzhang.com/solutions/sliding-window-median/
-* */
 public class Solution {
     PriorityQueue<Integer> maxHeap, minHeap;
     public List<Integer> medianSlidingWindow(int[] A, int k) {
-        // write your code here
         List<Integer> res = new ArrayList<Integer>();
         int n = A.length;
         if (n == 0) {

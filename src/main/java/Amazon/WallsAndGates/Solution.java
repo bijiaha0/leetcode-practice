@@ -1,53 +1,36 @@
 package Amazon.WallsAndGates;
 import java.util.LinkedList;
 import java.util.Queue;
-/**
- * Author: bijiaha0
- * Date: 2019-02-23
- * Time: 3:32 PM
- * Email: clickgwas@gmail.com
- * https://www.lintcode.com/problem/walls-and-gates/solution
- *
- * 0是注水点
- * -1是平原
- * inf是盆地
- */
 public class Solution {
-    public void wallsAndGates(int[][] rooms) {
-        // Write your code here
-        int n = rooms.length;
-        if (n == 0) {
-            return;
-        }
-        int m = rooms[0].length;
-
-        int dx[] = {0, 1, 0, -1};
-        int dy[] = {1, 0, -1, 0};
-
-        Queue<Integer> qx = new LinkedList<>();
-        Queue<Integer> qy = new LinkedList<>();
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (rooms[i][j] == 0) {
-                    qx.offer(i);
-                    qy.offer(j);
+    void wallsAndGates(int[][] rooms) {
+        int r = rooms.length;
+        int c = rooms[0].length;
+        bfs(rooms,r,c);
+    }
+    void bfs(int[][] rooms,int r, int c){
+        int[] dx = {0,1,0,-1};
+        int[] dy = {1,0,-1,0};
+        Queue<Integer> queue_x = new LinkedList<>();
+        Queue<Integer> queue_y = new LinkedList<>();
+        for(int i = 0; i < r;i++){
+            for(int j = 0; j < c;j++){
+                if(rooms[i][j]==0){
+                    queue_x.offer(i);
+                    queue_y.offer(j);
+                    rooms[i][j]=0;
                 }
             }
         }
-
-        while (!qx.isEmpty()) {
-            int cx = qx.poll();
-            int cy = qy.poll();
-
-            for (int i = 0; i < 4; i++) {
-                int nx = cx + dx[i];
-                int ny = cy + dy[i];
-                if (0 <= nx && nx < n && 0 <= ny && ny < m
-                        && rooms[nx][ny] == Integer.MAX_VALUE) {
-                    qx.offer(nx);
-                    qy.offer(ny);
-                    rooms[nx][ny] = rooms[cx][cy] + 1;
+        while (!queue_x.isEmpty()){
+            int xx = queue_x.poll();
+            int yy = queue_y.poll();
+            for(int ii=0;ii<4;ii++){
+                int n_x = xx+dx[ii];
+                int n_y = yy+dy[ii];
+                if(n_x >= 0 && n_x < r && n_y >= 0 && n_y < c && rooms[n_x][n_y] == Integer.MAX_VALUE){
+                    queue_x.offer(n_x);
+                    queue_y.offer(n_y);
+                    rooms[n_x][n_y] = rooms[xx][yy]+1;
                 }
             }
         }

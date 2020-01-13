@@ -1,22 +1,16 @@
 package Amazon.GraphValidTree;
 import java.util.HashMap;
-/**
- * Time: 6:19 PM
- * Email: clickgwas@gmail.com
- */
 public class Solution2 {
-    // version 2: Union Find
     //并查集
     public class Solution {
         class UnionFind {
             HashMap<Integer, Integer> father = new HashMap<Integer, Integer>();
-
             UnionFind(int n) {
                 for (int i = 0; i < n; i++) {
                     father.put(i, i);
                 }
             }
-
+            // 压缩
             int compressed_find(int x) {
                 int parent = father.get(x);
                 while (parent != father.get(parent)) {
@@ -25,7 +19,6 @@ public class Solution2 {
                 }
                 return parent;
             }
-
             //合并
             void union(int x, int y) {
                 int fa_x = compressed_find(x);
@@ -34,8 +27,6 @@ public class Solution2 {
                     father.put(fa_x, fa_y);
             }
         }
-
-        //
         public boolean validTree(int n, int[][] edges) {
             // tree should have n nodes with n-1 edges
             if (n - 1 != edges.length) {

@@ -1,9 +1,6 @@
 package Amazon.SurroundedRegions;
 import java.util.LinkedList;
 import java.util.Queue;
-/**
- * https://www.lintcode.com/problem/surrounded-regions/description
- */
 public class Solution {
     public void surroundedRegions(char[][] board) {
         int n = board.length;
@@ -38,7 +35,6 @@ public class Solution {
         int m = board[0].length;
         int[] dx = { 0, 1, 0, -1 };
         int[] dy = { 1, 0, -1, 0 };
-
         Queue<Integer> qx = new LinkedList<>();
         Queue<Integer> qy = new LinkedList<>();
         qx.offer(sx);

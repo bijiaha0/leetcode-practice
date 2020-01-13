@@ -1,7 +1,4 @@
 package Amazon.MaximumSubarray;
-/*
-* https://www.lintcode.com/problem/maximum-subarray/description
-* */
 public class Solution {
     public int maxSubArray(int[] A) {
         if (A == null || A.length == 0){

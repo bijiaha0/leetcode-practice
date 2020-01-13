@@ -1,7 +1,5 @@
 package Amazon.WiggleSortII;
-
 public class Solution {
-
     public static void wiggleSort(int[] nums) {
         final int n = nums.length;
         int[] tem = new int[n];

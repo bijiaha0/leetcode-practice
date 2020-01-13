@@ -2,14 +2,6 @@ package Amazon.UglyNumberII;
 import java.util.HashSet;
 import java.util.PriorityQueue;
 import java.util.Queue;
-/**
- * https://www.jiuzhang.com/solutions/ugly-number-ii/
- * 在HashSet中，基本的操作都是有HashMap底层实现的，因为HashSet底层是用HashMap存储数据的。
- * 当向HashSet中添加元素的时候，首先计算元素的hashcode值，
- * 然后用这个（元素的hashcode）%（HashMap集合的大小）+1计算出这个元素的存储位置，
- * 如果这个位置位空，就将元素添加进去；如果不为空，则用equals方法比较元素是否相等，
- * 相等就不添加，否则就在屁股后面添加。
- */
 public class Solution {
     public int nthUglyNumber(int n) {
         Queue<Long> Q = new PriorityQueue<Long>();

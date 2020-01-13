@@ -1,15 +1,10 @@
 package Amazon.BurstBalloons;
-/*
-*https://www.jiuzhang.com/solutions/burst-balloons/
-* */
 public class Solution {
     public int maxCoins(int[] AA) {
-        // Write your code here
         int n = AA.length;
         if (n == 0) {
             return 0;
         }
-
         int i, j, k, len;
         int[] A = new int[n + 2];
         A[0] = A[n + 1] = 1;

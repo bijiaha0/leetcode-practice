@@ -9,13 +9,13 @@ public class Main2 {
     }
 
     /*
-    // mergeSort
-    private static void mergeSort(Comparable[] arr, int l, int r){
+    // doSort
+    private static void doSort(Comparable[] arr, int l, int r){
         if(l >= r)
             return;
         int mid = (l+r)/2;
-        mergeSort(arr, l, mid);
-        mergeSort(arr, mid + 1, r);
+        doSort(arr, l, mid);
+        doSort(arr, mid + 1, r);
         merge(arr, l, mid, r);
     }
     */

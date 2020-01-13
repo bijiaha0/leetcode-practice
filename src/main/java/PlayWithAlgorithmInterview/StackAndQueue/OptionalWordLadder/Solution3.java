@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.LinkedList;
 
-/// Bi-directional BFS
+/// Bi-directional BFSAndDFS
 /// Time Complexity: O(n*n)
 /// Space Complexity: O(n)
 public class Solution3 {
@@ -29,7 +29,7 @@ public class Solution3 {
                 g[j][i] = g[i][j] = similar(wordList.get(i), wordList.get(j));
 
 
-        // bi-derectional-BFS
+        // bi-derectional-BFSAndDFS
         LinkedList<Integer> qStart = new LinkedList<>();
         LinkedList<Integer> qEnd = new LinkedList<>();
 

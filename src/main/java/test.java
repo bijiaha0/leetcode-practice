@@ -42,12 +42,26 @@ public class test {
     }
 
     public static void main(String[] args) {
-        Comparable[] arr = {1,5,0,4,9,6};
-        mergeSortAnother(arr);
-        //mergeSort(arr);
-        for(int i =0 ; i< arr.length;i++){
-            System.out.println(arr[i]);
-        }
+        //Comparable[] arr = {1,5,0,4,9,6};
+        //mergeSortAnother(arr);
+        ////doSort(arr);
+        //for(int i =0 ; i< arr.length;i++){
+        //    System.out.println(arr[i]);
+        //}
+        //char[] data = {'a', 'b', 'c', 'd'};
+        //String string = String.valueOf(data);
+        //System.out.println(string);
+
+
+        //String s = "\n\t\n\t";
+        //int res = s.lastIndexOf('\t');
+        //System.out.println(res);
+
+        int[] arr = {1,1,1,2,3,3};
+        int index = Arrays.binarySearch(arr, 1);
+        System.out.println(index);
+
+
 
     }
     /*

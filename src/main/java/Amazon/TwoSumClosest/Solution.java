@@ -9,9 +9,7 @@ public class Solution {
         if (nums == null || nums.length < 2) {
             return -1;
         }
-
         Arrays.sort(nums);
-
         int left = 0, right = nums.length - 1;
         int diff = Integer.MAX_VALUE;
 

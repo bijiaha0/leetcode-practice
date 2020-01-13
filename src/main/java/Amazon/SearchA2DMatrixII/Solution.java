@@ -1,12 +1,9 @@
 package Amazon.SearchA2DMatrixII;
 /**
- * Email: clickgwas@gmail.com
  * https://www.lintcode.com/problem/search-a-2d-matrix-ii/description
- * amazon
  */
 public class Solution {
     public int searchMatrix(int[][] matrix, int target) {
-        // write your code here
         int r = matrix.length - 1;
         int c = 0;
         int ans = 0;

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.LinkedList;
 import java.util.HashSet;
 import javafx.util.Pair;
-/// BFS
+/// BFSAndDFS
 /// Using set to store all the words and erase visited word eagerly.
 /// Time Complexity: O(n*n)
 /// Space Complexity: O(n)
@@ -19,7 +19,7 @@ public class Solution2 {
         HashSet<String> wordSet = new HashSet<>();
         for(String word: wordList)
             wordSet.add(word);
-        // BFS
+        // BFSAndDFS
         LinkedList<Pair<String, Integer>> q = new LinkedList<>();
         q.addLast(new Pair<>(beginWord, 1));
         wordSet.remove(beginWord);

@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.LinkedList;
 
-/// BFS
+/// BFSAndDFS
 /// Time Complexity: O(n*n)
 /// Space Complexity: O(n)
 public class Solution {
@@ -28,7 +28,7 @@ public class Solution {
             for(int j = 0 ; j < i ; j ++)
                 g[j][i] = g[i][j] = similar(wordList.get(i), wordList.get(j));
 
-        // BFS
+        // BFSAndDFS
         LinkedList<Integer> q = new LinkedList<>();
         int[] step = new int[n];
 

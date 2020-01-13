@@ -39,7 +39,7 @@ public class Solution {
         }
         path.remove(path.size() - 1);
     }
-    //BFS  end --> start
+    //BFSAndDFS  end --> start
     void bfs(Map<String, List<String>> map, Map<String, Integer> distance,
              String start, String end, Set<String> dict) {
         Queue<String> q = new LinkedList<String>();

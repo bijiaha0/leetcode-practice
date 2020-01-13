@@ -4,7 +4,7 @@ import java.util.*;
  * Email: clickgwas@gmail.com
  * https://www.lintcode.com/problem/graph-valid-tree/solution
  */
-// version 1: BFS
+// version 1: BFSAndDFS
 // 验证图是否是树
 public class Solution1 {
     /**

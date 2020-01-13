@@ -1,7 +1,10 @@
 package Amazon.KthLargestElement;
 /*
- * https://www.jiuzhang.com/solution/kth-largest-element
  * 寻找第k大元素
+ * 时间复杂度是O(n)   等比数列
+ * 第一大是length-1
+ * 第二大是length-2
+ * 第k大是length-k
  * */
 public class Solution {
     public int kthLargestElement(int k, int[] nums) {
@@ -11,17 +14,16 @@ public class Solution {
         if (k <= 0) {
             return 0;
         }
-        return helper(nums, 0, nums.length - 1, nums.length - k + 1);
+        return helper(nums, 0, nums.length - 1, nums.length - k);
     }
-
     public int helper(int[] nums, int l, int r, int k) {
-        if (l == r) {
+        if (l >= r) {
             return nums[l];
         }
         int position = partition(nums, l, r);
-        if (position + 1 == k) {
+        if (position == k) {
             return nums[position];
-        } else if (position + 1 < k) {
+        } else if (position < k) {
             return helper(nums, position + 1, r, k);
         } else {
             return helper(nums, l, position - 1, k);

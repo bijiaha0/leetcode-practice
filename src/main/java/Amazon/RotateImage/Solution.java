@@ -1,19 +1,27 @@
 package Amazon.RotateImage;
+
 /**
- * Email: clickgwas@gmail.com
  * https://www.lintcode.com/problem/rotate-image/description
  */
 public class Solution {
     public void rotate(int[][] matrix) {
-        // write your code here
-        int n = matrix.length;
-        for (int r = 0; r < (n + 1) / 2; r++) {
-            for (int c = 0; c < n / 2; c++) {
-                int tmp = matrix[r][c];
-                matrix[r][c] = matrix[n - 1 - c][r];
-                matrix[n - 1 - c][r] = matrix[n - 1 - r][n - 1 - c];
-                matrix[n - 1 - r][n - 1 - c] = matrix[c][n - 1 - r];
-                matrix[c][n - 1 - r] = tmp;
+        int row = matrix.length;
+        int col = matrix[0].length;
+        int i, j;
+        //上下翻转
+        for (i = 0; i < row / 2; i++) {
+            for (j = 0; j < col; j++) {
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[row - 1 - i][j];
+                matrix[row - 1 - i][j] = tmp;
+            }
+        }
+        //对角线
+        for (i = 0; i < row; i++) {
+            for (j = i; j < col; j++) {
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = tmp;
             }
         }
     }

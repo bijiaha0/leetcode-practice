@@ -2,39 +2,24 @@ package Amazon.CombinationSum;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-/**
- * Email: clickgwas@gmail.com
- * https://www.jiuzhang.com/solutions/combination-sum/
- */
 public class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(candidates);
-
-        List<List<Integer>> results = new ArrayList<>();
-        dfs(candidates, 0, target, new ArrayList<Integer>(), results);
-        return results;
+        if(candidates.length==0) return res;
+        dfs(res, new ArrayList<>(),candidates,target,0);
+        return res;
     }
-
-    private void dfs(int[] candidates, int index, int target, List<Integer> combination, List<List<Integer>> results) {
-        if (index == candidates.length) {
-            if (target == 0) {
-                results.add(new ArrayList<Integer>(combination));
-            }
+    void dfs(List<List<Integer>> res, List<Integer> tmp,int[] candidates,int target,int start){
+        if(target==0){
+            res.add(new ArrayList<>(tmp));
             return;
         }
-
-        if (target < 0) {
-            return;
+        if(target<0) return;
+        for(int i=start; i < candidates.length;i++){
+            List<Integer> tmp1 = new ArrayList<>(tmp);
+            tmp1.add(candidates[i]);
+            dfs(res, tmp1,candidates,target-candidates[i],i);
         }
-
-        dfs(candidates, index + 1, target, combination, results);
-
-        if (index > 0 && candidates[index] == candidates[index - 1]) {
-            return;
-        }
-        //2、递归的拆解
-        combination.add(candidates[index]);
-        dfs(candidates, index, target - candidates[index], combination, results);
-        combination.remove(combination.size() - 1);
     }
 }

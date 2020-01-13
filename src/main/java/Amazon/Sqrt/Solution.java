@@ -1,24 +1,19 @@
 package Amazon.Sqrt;
-/*
-* https://www.lintcode.com/problem/sqrtx/description
-* 二分
-* */
 public class Solution {
     public int sqrt(int x) {
-        // find the last number which square of it <= x
-        long start = 1, end = x;
-        while (start + 1 < end) {
-            long mid = (start + end) >>> 1;
-            if (mid * mid <= x) {
-                start = mid;
-            } else {
-                end = mid;
+        if(x==0) return 0;
+        int left = 1;
+        int right = x;
+        while(left<=right){
+            int mid = left+(right-left)/2;
+            if(mid==x/mid){
+                return  mid;
+            }else if(mid>x/mid){
+                right = mid-1;
+            }else{
+                left = mid+1;
             }
         }
-
-        if (end * end <= x) {
-            return (int) end;
-        }
-        return (int) start;
+        return right;
     }
 }

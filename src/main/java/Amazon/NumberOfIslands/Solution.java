@@ -1,11 +1,6 @@
 package Amazon.NumberOfIslands;
 import java.util.LinkedList;
 import java.util.Queue;
-/**
- * 岛屿的个数
- * BFS
- * https://www.lintcode.com/problem/number-of-islands/description
- */
 class Coordinate {
     int x, y;
     public Coordinate(int x, int y) {
@@ -18,11 +13,9 @@ public class Solution {
         if (grid == null || grid.length == 0 || grid[0].length == 0) {
             return 0;
         }
-
         int n = grid.length;
         int m = grid[0].length;
         int islands = 0;
-
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (grid[i][j]) {
@@ -31,10 +24,8 @@ public class Solution {
                 }
             }
         }
-
         return islands;
     }
-
     private void markByBFS(boolean[][] grid, int x, int y) {
 
         int[] directionX = {0, 1, -1, 0};
