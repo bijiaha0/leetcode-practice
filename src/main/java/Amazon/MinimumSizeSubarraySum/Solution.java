@@ -1,10 +1,10 @@
 package Amazon.MinimumSizeSubarraySum;
+
 /**
- *
  * Given an array of n positive integers and a positive integer s,
  * find the minimal length of a subarray of which the sum ≥ s.
  * If there isn't one, return 0 instead.
- *
+ * <p>
  * For example, given the array [2,3,1,2,4,3] and s = 7,
  * the subarray [4,3] has the minimal length of 2 under the problem constraint.
  */
@@ -25,8 +25,10 @@ public class Solution {
         return ans == Integer.MAX_VALUE ? -1 : ans;
     }
 
-    //滑动窗口算法模板 推荐！！！
-    public static Integer solve3(int[] arr, int k) {
+    /**
+     * 滑动窗口算法模板 推荐！！！
+     */
+    public static Integer solve2(int[] arr, int k) {
         int left = 0, ans = Integer.MAX_VALUE, sum = 0;
         for (int right = 0; right < arr.length; right++) {
             sum += arr[right];
