@@ -5,6 +5,9 @@ package LeetCode.SameTree;
  * @date 2020/4/4 7:11 PM
  */
 public class Solution {
+    /**
+     * 时间复杂度是O(n)
+     */
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p == null && q == null) {
             return true;
