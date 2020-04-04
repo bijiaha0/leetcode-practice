@@ -1,13 +1,12 @@
-package Amazon.SymmetricTree;
+package LeetCode.SymmetricTree;
 
 import java.util.ArrayDeque;
 /**
  * Author: bijiaha0
  * Date: 2019-05-25
- * Time: 17:11
- * Email: clickgwas@gmail.com
+ * https://leetcode.com/problems/symmetric-tree/
+ * id = 101
  */
-
 class TreeNode {
     int val;
     TreeNode left;
@@ -44,5 +43,22 @@ public class Solution {
             deque.addLast(right.left);
         }
         return true;
+    }
+
+    public boolean isSymmetric2(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        return help(root.left, root.right);
+    }
+
+    boolean help(TreeNode left, TreeNode right) {
+        if (left == null || right == null) {
+            return left == right;
+        }
+        if (left.val != right.val) {
+            return false;
+        }
+        return help(left.left, right.right) && help(left.right, right.left);
     }
 }
