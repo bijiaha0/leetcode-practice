@@ -1,6 +1,8 @@
 package Amazon.LongestSubstringWithoutRepeatingCharacters;
+
 public class LongestSubstringWithoutRepeatingCharacters {
-    public int lengthOfLongestSubstring1(String s) {
+
+    public int lengthOfLongestSubstring(String s) {
         int i, j = 0, ans = 0, n = s.length();
         char[] sc = s.toCharArray();
         int[] map = new int[256];
@@ -14,4 +16,5 @@ public class LongestSubstringWithoutRepeatingCharacters {
         }
         return ans;
     }
+
 }
