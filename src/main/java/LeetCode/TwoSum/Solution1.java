@@ -1,4 +1,4 @@
-package Amazon.TwoSum;
+package LeetCode.TwoSum;
 
 import java.util.Arrays;
 import java.util.Comparator;
