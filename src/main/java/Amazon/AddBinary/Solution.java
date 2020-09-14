@@ -1,14 +1,12 @@
 package Amazon.AddBinary;
+
 /**
- * Author: bijiaha0
- * Date: 2019-02-23
- * Time: 11:25 PM
- * Email: clickgwas@gmail.com
  * https://www.lintcode.com/problem/add-binary/description
- * 二进制相加
+ * 给定两个二进制字符串，返回他们的和（用二进制表示）。
  */
 public class Solution {
-    public String addBinary(String a, String b) {
+
+    public static String addBinary(String a, String b) {
         String ans = "";
         int carry = 0;
         for (int i = a.length() - 1, j = b.length() - 1; i >= 0 || j >= 0; i--, j--) {
@@ -22,5 +20,9 @@ public class Solution {
             ans = carry + ans;
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(addBinary("11", "1"));
     }
 }

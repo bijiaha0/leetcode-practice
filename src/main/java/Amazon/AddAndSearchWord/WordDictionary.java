@@ -1,6 +1,5 @@
 package Amazon.AddAndSearchWord;
 /**
- * Email: clickgwas@gmail.com
  * https://www.jiuzhang.com/solution/add-and-search-word/
  */
 // Version1 use Array

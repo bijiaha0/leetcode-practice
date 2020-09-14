@@ -3,13 +3,6 @@ package Amazon.AddAndSearchWord;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Author: bijiaha0
- * Date: 2019-02-26
- * Time: 6:51 PM
- * Email: clickgwas@gmail.com
- */
-
 public class Solution {
     class TrieNode {
         // Initialize your data structure here.
