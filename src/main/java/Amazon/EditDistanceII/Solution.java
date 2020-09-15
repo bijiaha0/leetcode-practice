@@ -13,15 +13,18 @@ public class Solution {
      * @return true if they are both one edit distance apart or false
      */
     public boolean isOneEditDistance(String s, String t) {
+
         // Write your code here
         if (s.length() > t.length()) {
             return isOneEditDistance(t, s);
         }
+
         int diff = t.length() - s.length();
 
         if (diff > 1) {
             return false;
         }
+
         if (diff == 0) {
             int cnt = 0;
             for (int i = 0; i < s.length(); i++) {
@@ -31,6 +34,7 @@ public class Solution {
             }
             return (cnt == 1);
         }
+
         if (diff == 1) {
             for (int i = 0; i < s.length(); i++) {
                 if (t.charAt(i) != s.charAt(i)) {
@@ -38,6 +42,7 @@ public class Solution {
                 }
             }
         }
+
         return true;
     }
 }
