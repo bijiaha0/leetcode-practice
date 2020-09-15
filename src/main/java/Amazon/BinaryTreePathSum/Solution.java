@@ -1,23 +1,25 @@
 package Amazon.BinaryTreePathSum;
+
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * https://www.jiuzhang.com/solution/binary-tree-path-sum/
+ *
+ * 给定一个二叉树，找出所有路径中各节点相加总和等于给定 目标值 的路径。一个有效的路径，指的是从根节点到叶节点的路径。
  */
 class TreeNode {
     public int val;
     public TreeNode left, right;
+
     public TreeNode(int val) {
         this.val = val;
         this.left = this.right = null;
     }
 }
+
 public class Solution {
     public List<List<Integer>> binaryTreePathSum(TreeNode root, int target) {
-        // Algorithm: Traverse
-        // Use recursion to traverse the tree in preorder, pass with a parameter
-        // `sum` as the sum of each node from root to current node.
-        // Put the whole path into result if the leaf has a sum equal to target.
 
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) {
