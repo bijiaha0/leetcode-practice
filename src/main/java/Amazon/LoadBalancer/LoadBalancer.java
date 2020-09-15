@@ -22,6 +22,7 @@ public class LoadBalancer {
     }
 
     public void remove(int server_id) {
+
         if (pos.containsKey(server_id)) {
             //从hash表中查找要删除元素，在数组中的索引
             int removeIdx = pos.get(server_id);
@@ -36,6 +37,7 @@ public class LoadBalancer {
             array.remove(n - 1);
             n--;
         }
+
     }
 
     public int pick() {
