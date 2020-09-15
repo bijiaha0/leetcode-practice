@@ -6,11 +6,10 @@ import java.util.List;
 /**
  * https://www.jiuzhang.com/solutions/substring-anagrams/
  */
-
 public class Solution {
 
     public List<Integer> findAnagrams(String s, String p) {
-        // Write your code here
+
         List<Integer> ans = new ArrayList<>();
         if (s.length() < p.length()) {
             return ans;
@@ -39,6 +38,7 @@ public class Solution {
         }
 
         for (int i = p.length(); i < s.length(); i++) {
+
             int r = sc[i];
             int l = sc[i - p.length()];
             cntS[r]++;
