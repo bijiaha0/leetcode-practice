@@ -28,7 +28,7 @@ public class Solution {
 
         for (String line : input.split("\n")) {
             int level = line.lastIndexOf('\t') + 2;
-            int len = line.length() - (level - 1); //level - 1 = \t的长度，remove \t
+            int len = line.length() - (level - 1); //remove \t (level - 1 = \t的长度)
             if (line.contains(".")) {
                 ans = Math.max(ans, sum[level - 1] + len);
             } else {
