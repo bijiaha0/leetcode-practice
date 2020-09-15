@@ -1,6 +1,18 @@
 package Amazon.LongestConsecutiveSequence;
+
 import java.util.HashSet;
 import java.util.Set;
+
+/**
+ * https://www.jiuzhang.com/solutions/longest-consecutive-sequence/
+ * <p>
+ * 给定一个未排序的整数数组，找出最长连续序列的长度。
+ *
+ * 输入 : [100, 4, 200, 1, 3, 2]
+ * 输出 : 4
+ * 解释 : 这个最长的连续序列是 [1, 2, 3, 4]. 返回所求长度 4
+ */
+
 public class Solution {
     public int longestConsecutive(int[] num) {
         Set<Integer> set = new HashSet<>();

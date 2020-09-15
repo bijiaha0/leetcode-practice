@@ -4,12 +4,15 @@ import java.util.*;
  * https://www.lintcode.com/problem/load-balancer/description
  */
 public class LoadBalancer {
+
     int n = 0;
     Map<Integer, Integer> pos = new HashMap<>();
     List<Integer> array = new ArrayList<>();
     Random rand = new Random();
+
     public LoadBalancer() {
     }
+
     public void add(int server_id) {
         if (!pos.containsKey(server_id)) {
             array.add(server_id);
@@ -17,6 +20,7 @@ public class LoadBalancer {
             n++;
         }
     }
+
     public void remove(int server_id) {
         if (pos.containsKey(server_id)) {
             //从hash表中查找要删除元素，在数组中的索引
@@ -33,6 +37,7 @@ public class LoadBalancer {
             n--;
         }
     }
+
     public int pick() {
         return array.get(rand.nextInt(n));
     }
