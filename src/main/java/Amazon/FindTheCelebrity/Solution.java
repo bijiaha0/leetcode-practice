@@ -1,9 +1,5 @@
 package Amazon.FindTheCelebrity;
 /**
- * Author: bijiaha0
- * Date: 2019-02-23
- * Time: 12:37 AM
- * Email: clickgwas@gmail.com
  * 发现冗余的过程
  * https://www.lintcode.com/problem/find-the-celebrity/description
  */

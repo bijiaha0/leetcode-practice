@@ -1,10 +1,12 @@
 package Amazon.MissingRanges;
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * https://www.lintcode.com/problem/missing-ranges/description
  */
 public class Solution {
+
     public List<String> findMissingRanges(int[] nums, int lower, int upper) {
         List<String> ans = new ArrayList<>();
         if (nums == null || nums.length == 0) {
@@ -18,6 +20,7 @@ public class Solution {
         addRange(ans, (long)nums[nums.length - 1] + 1, upper);
         return ans;
     }
+
     void addRange(List<String> ans, long st, long ed) {
         if (st > ed) {
             return;
@@ -28,4 +31,5 @@ public class Solution {
         }
         ans.add(st + "->" + ed);
     }
+
 }
