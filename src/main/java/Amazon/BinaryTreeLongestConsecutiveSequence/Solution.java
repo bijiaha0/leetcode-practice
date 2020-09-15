@@ -34,6 +34,7 @@ public class Solution {
         int length = (parent != null && parent.val + 1 == root.val) ? lengthWithoutRoot + 1 : 1;
         int left = helper(root.left, root, length);
         int right = helper(root.right, root, length);
+        
         return Math.max(length, Math.max(left, right));
 
     }
