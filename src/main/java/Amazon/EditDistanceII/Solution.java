@@ -1,12 +1,17 @@
 package Amazon.EditDistanceII;
 
 /**
- * @author bijh@tsingyun.net
- * @date 2020/9/15 8:18 AM
  * https://www.jiuzhang.com/solutions/edit-distance-ii/
+ * 给定两个字符串 S 和 T, 判断T是否可以通过对S做刚好一次编辑得到。
+ * 每次编辑可以选择以下任意一个操作：
+ *
+ * 在S的任意位置插入一个字符
+ * 删除S中的任意一个字符
+ * 将S中的任意字符替换成其他字符
  */
-// version: 高频题班
+
 public class Solution {
+
     /**
      * @param s a string
      * @param t a string
@@ -14,7 +19,6 @@ public class Solution {
      */
     public boolean isOneEditDistance(String s, String t) {
 
-        // Write your code here
         if (s.length() > t.length()) {
             return isOneEditDistance(t, s);
         }
