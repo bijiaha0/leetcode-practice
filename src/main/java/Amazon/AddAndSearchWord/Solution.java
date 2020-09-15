@@ -4,14 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
+
     class TrieNode {
+
         public HashMap<Character, TrieNode> children;
         public boolean hasWord;
+
         public TrieNode() {
             children = new HashMap<Character, TrieNode>();
             hasWord = false;
         }
+
     }
+
     private TrieNode root;
 
     public Solution() {
@@ -32,7 +37,7 @@ public class Solution {
     }
 
     boolean find(String word, int index, TrieNode now) {
-        if (index == word.length()){
+        if (index == word.length()) {
             if (now.children.size() == 0)
                 return true;
             else
@@ -40,18 +45,18 @@ public class Solution {
         }
         Character c = word.charAt(index);
         if (now.children.containsKey(c)) {
-            if (index == word.length()-1 && now.children.get(c).hasWord) {
+            if (index == word.length() - 1 && now.children.get(c).hasWord) {
                 return true;
             }
-            return find(word, index+1, now.children.get(c)) ;
-        } else if(c == '.') {
+            return find(word, index + 1, now.children.get(c));
+        } else if (c == '.') {
             boolean result = false;
-            for (Map.Entry<Character, TrieNode> child: now.children.entrySet()) {
-                if (index == word.length()-1 && child.getValue().hasWord) {
+            for (Map.Entry<Character, TrieNode> child : now.children.entrySet()) {
+                if (index == word.length() - 1 && child.getValue().hasWord) {
                     return true;
                 }
                 //if any path is true, set result to be true;
-                if (find(word, index+1, child.getValue())) {
+                if (find(word, index + 1, child.getValue())) {
                     result = true;
                 }
             }
