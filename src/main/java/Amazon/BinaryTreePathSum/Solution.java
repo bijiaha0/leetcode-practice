@@ -2,7 +2,6 @@ package Amazon.BinaryTreePathSum;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Email: clickgwas@gmail.com
  * https://www.jiuzhang.com/solution/binary-tree-path-sum/
  */
 class TreeNode {
