@@ -11,7 +11,8 @@ class TreeNode {
 
     public TreeNode(int val) {
         this.val = val;
-        this.left = this.right = null;
+        this.left = null;
+        this.right = null;
     }
 
 }
@@ -19,9 +20,7 @@ class TreeNode {
 public class Solution {
 
     public int longestConsecutive(TreeNode root) {
-
         return helper(root, null, 0);
-
     }
 
     private int helper(TreeNode root, TreeNode parent, int lengthWithoutRoot) {
