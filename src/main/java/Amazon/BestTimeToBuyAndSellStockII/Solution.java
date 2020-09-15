@@ -1,4 +1,5 @@
 package Amazon.BestTimeToBuyAndSellStockII;
+
 public class Solution {
     int maxProfit(int[] prices) {
         int n = prices.length;
