@@ -32,11 +32,7 @@ public class Solution {
         return result;
     }
 
-    private void helper(TreeNode root,
-                        ArrayList<Integer> path,
-                        int sum,
-                        int target,
-                        List<List<Integer>> result) {
+    private void helper(TreeNode root, ArrayList<Integer> path, int sum, int target, List<List<Integer>> result) {
 
         // meet leaf
         if (root.left == null && root.right == null) {
