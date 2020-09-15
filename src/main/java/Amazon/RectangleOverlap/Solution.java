@@ -1,8 +1,6 @@
 package Amazon.RectangleOverlap;
 /**
- * Email: clickgwas@gmail.com
- * 矩阵重叠
- * amazon
+ https://www.jiuzhang.com/solutions/rectangle-overlap/
  */
 class Point {
       public int x, y;

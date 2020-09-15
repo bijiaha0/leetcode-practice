@@ -1,24 +1,33 @@
 package Amazon.CheckWordAbbreviation;
+
+/**
+ * https://www.jiuzhang.com/solutions/check-word-abbreviation/
+ */
 public class Solution {
+
     public boolean validWordAbbreviation(String word, String abbr) {
-        int i = 0;
-        int j = 0;
-        char[] w = word.toCharArray();
-        char[] a = abbr.toCharArray();
-        while (i < w.length && j < a.length) {
-            if (Character.isDigit(a[j])) {
+
+        int i = 0, j = 0;
+        char[] s = word.toCharArray();
+        char[] t = abbr.toCharArray();
+
+        while (i < s.length && j < t.length) {
+            if (Character.isDigit(t[j])) {
+                if (t[j] == '0') {
+                    return false;
+                }
                 int val = 0;
-                while (j < a.length && Character.isDigit(a[j])) {
-                    val = val * 10 + a[j] - '0';
+                while (j < t.length && Character.isDigit(t[j])) {
+                    val = val * 10 + t[j] - '0';
                     j++;
                 }
                 i += val;
             } else {
-                if (w[i++] != a[j++]) {
+                if (s[i++] != t[j++]) {
                     return false;
                 }
             }
         }
-        return i == w.length && j == a.length;
+        return i == s.length && j == t.length;
     }
 }

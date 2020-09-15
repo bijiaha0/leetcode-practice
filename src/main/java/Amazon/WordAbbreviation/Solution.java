@@ -2,7 +2,7 @@ package Amazon.WordAbbreviation;
 import java.util.HashMap;
 import java.util.Map;
 /**
- * https://www.lintcode.com/problem/word-abbreviation/solution
+ * https://www.jiuzhang.com/problem/word-abbreviation/
  */
 public class Solution {
     public String[] wordsAbbreviation(String[] dict) {
@@ -10,10 +10,12 @@ public class Solution {
         String[] ans = new String[len];
         int round = 1;
         Map<String, Integer> count = new HashMap<>();
+
         for (int i = 0; i < len; i++) {
             ans[i] = getAbbr(dict[i], round);
             count.put(ans[i], count.getOrDefault(ans[i], 0) + 1);
         }
+
         while (true) {
             boolean unique = true;
             round++;
@@ -28,8 +30,10 @@ public class Solution {
                 break;
             }
         }
+
         return ans;
     }
+
     String getAbbr(String s, int p) {
         if (p >= s.length() - 2) {
             return s;

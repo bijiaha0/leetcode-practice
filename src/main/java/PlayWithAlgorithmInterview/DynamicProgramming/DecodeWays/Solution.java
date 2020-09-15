@@ -10,6 +10,7 @@ package PlayWithAlgorithmInterview.DynamicProgramming.DecodeWays;
  特判:
  如果字符串以 '0' 开头, 则直接返回0.
  如果运算中发现 f[i] == 0, 则说明此处无法解码, 同样直接返回0.
+ https://www.jiuzhang.com/solutions/decode-ways/
  */
 public class Solution {
     /**
