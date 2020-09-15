@@ -1,15 +1,27 @@
 package Amazon.BinarySearchTreeIterator;
 
 import java.util.Stack;
+
 class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int x) { val = x; }
+
+    TreeNode(int x) {
+        val = x;
+    }
 }
+
 public class BSTIterator {
+
+    public BSTIterator(TreeNode root) {
+        next = root;
+    }
+
     private Stack<TreeNode> stack = new Stack<>();
+
     TreeNode next = null;
+
     void AddNodeToStack(TreeNode root) {
         while (root != null) {
             stack.push(root);
@@ -17,12 +29,6 @@ public class BSTIterator {
         }
     }
 
-    // @param root: The root of binary tree.
-    public BSTIterator(TreeNode root) {
-        next = root;
-    }
-
-    //@return: True if there has next node, or false
     public boolean hasNext() {
         if (next != null) {
             AddNodeToStack(next);
@@ -31,7 +37,6 @@ public class BSTIterator {
         return !stack.isEmpty();
     }
 
-    //@return: return next node
     public TreeNode next() {
         if (!hasNext()) {
             return null;
@@ -40,4 +45,5 @@ public class BSTIterator {
         next = cur.right;
         return cur;
     }
+
 }
