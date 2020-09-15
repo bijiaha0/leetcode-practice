@@ -1,12 +1,22 @@
 package Amazon.RomanToInteger;
 /**
- * Author: bijiaha0
- * Date: 2019-02-23
- * Time: 12:22 AM
- * Email: clickgwas@gmail.com
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  * https://www.lintcode.com/problem/roman-to-integer/description
+ * 像IV=4 IX=9 XL=40 XC=90 这样的怎么处理呢？
+ * 没有 4 9 40 90 这种的，字母代表的数字从左往右是从大到小的
+ * 发现左边的如果小于右边，就把左边的减去.
+ *
+ *
  */
 public class Solution {
+
     public int romanToInt(String s) {
         int ans;
         char[] sc = s.toCharArray();
@@ -19,6 +29,7 @@ public class Solution {
         }
         return ans;
     }
+
     int toInt(char s) {
         switch(s) {
             case 'I': return 1;
@@ -31,4 +42,5 @@ public class Solution {
         }
         return 0;
     }
+
 }
