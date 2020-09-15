@@ -1,11 +1,5 @@
 package Amazon.BinaryTreeLongestConsecutiveSequenceII;
 
-/**
- * Author: bijiaha0
- * Date: 2019-03-03
- * Time: 17:02
- * Email: clickgwas@gmail.com
- */
 class TreeNode {
     public int val;
     public TreeNode left, right;
