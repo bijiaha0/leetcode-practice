@@ -5,11 +5,8 @@ import java.util.Map;
 
 public class Solution {
     class TrieNode {
-        // Initialize your data structure here.
         public HashMap<Character, TrieNode> children;
         public boolean hasWord;
-
-        // Initialize your data structure here.
         public TrieNode() {
             children = new HashMap<Character, TrieNode>();
             hasWord = false;
