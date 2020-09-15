@@ -1,6 +1,7 @@
 package Amazon.BinaryTreeInorderTraversal;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -20,10 +21,10 @@ class TreeNode {
 
 public class Solution {
 
-    public ArrayList<Integer> inorderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode root) {
 
-        ArrayList<Integer> result = new ArrayList<Integer>();
-        Stack<TreeNode> stack = new Stack<TreeNode>();
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
         TreeNode curt = root;
 
         while (curt != null || !stack.empty()) {
