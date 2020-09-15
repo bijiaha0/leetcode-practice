@@ -43,6 +43,7 @@ public class Solution {
         }
         intervals.add(idx, newInterval);
 
+        // Merge Interval
         Interval last = null;
         for (Interval item : intervals) {
             if (last == null || last.end < item.start) {
