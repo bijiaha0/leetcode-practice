@@ -1,11 +1,15 @@
 package Amazon.EncodeAndDecodeStrings;
+
 import java.util.ArrayList;
 import java.util.List;
-/*
-* https://www.lintcode.com/problem/encode-and-decode-strings/description
-* */
+
+/**
+ * https://www.jiuzhang.com/problem/encode-and-decode-strings/
+ */
 public class Solution {
+
     public String encode(List<String> strs) {
+
         StringBuilder ans = new StringBuilder();
         for (String s : strs) {
             for (char c : s.toCharArray()) {
@@ -18,8 +22,11 @@ public class Solution {
             ans.append(":;");                    // ; connector
         }
         return ans.toString();
+
     }
+
     public List<String> decode(String str) {
+
         List<String> ans = new ArrayList<>();
         char[] sc = str.toCharArray();
         StringBuilder item = new StringBuilder();
@@ -40,5 +47,6 @@ public class Solution {
             }
         }
         return ans;
+
     }
 }
