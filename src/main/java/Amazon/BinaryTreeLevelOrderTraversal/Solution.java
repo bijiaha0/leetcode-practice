@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 class TreeNode {
+
     public int val;
     public TreeNode left, right;
 
@@ -13,6 +14,7 @@ class TreeNode {
         this.val = val;
         this.left = this.right = null;
     }
+
 }
 
 public class Solution {
