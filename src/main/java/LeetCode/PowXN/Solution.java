@@ -1,15 +1,25 @@
 package LeetCode.PowXN;
 
+/**
+ * https://www.jiuzhang.com/problem/428-pow-x-n/
+ */
 public class Solution {
+
     double powx(double x, int n) {
+
         if (n < 0) {
             if (x == 0) return 0;
             x = 1 / x;
             n = -n;
         }
+
         if (n == 0) return 1;
+
         double r = powx(x, n / 2);
+
+        //偶数还是奇数
         return (n & 1) == 1 ? x * r * r : r * r;
+
     }
 
     public double powx1(double x, int n) {
