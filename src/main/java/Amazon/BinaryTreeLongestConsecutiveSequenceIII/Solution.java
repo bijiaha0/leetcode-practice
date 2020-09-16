@@ -1,29 +1,38 @@
 package Amazon.BinaryTreeLongestConsecutiveSequenceIII;
+
 import java.util.List;
+
 /**
  * https://www.jiuzhang.com/solution/binary-tree-longest-consecutive-sequence-iii/
  */
 
 class MultiTreeNode {
-      int val;
-      List<MultiTreeNode> children;
-      MultiTreeNode(int x) { val = x; }
+    int val;
+    List<MultiTreeNode> children;
+
+    MultiTreeNode(int x) {
+        val = x;
+    }
 }
+
 class ResultType {
     public int max_len, max_down, max_up;
+
     ResultType(int len, int down, int up) {
         max_len = len;
         max_down = down;
         max_up = up;
     }
 }
+
 public class Solution {
+
     public int longestConsecutive3(MultiTreeNode root) {
-        // Write your code here
         return helper(root).max_len;
     }
 
     ResultType helper(MultiTreeNode root) {
+
         if (root == null) {
             return new ResultType(0, 0, 0);
         }
