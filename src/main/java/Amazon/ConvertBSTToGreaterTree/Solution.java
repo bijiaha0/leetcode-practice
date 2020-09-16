@@ -7,6 +7,12 @@ class TreeNode{
         this.val = val;
     }
 }
+
+
+/**
+ * 反中根遍历
+ * https://www.jiuzhang.com/solutions/convert-bst-to-greater-tree/
+ */
 public class Solution {
 
     int sum = 0;

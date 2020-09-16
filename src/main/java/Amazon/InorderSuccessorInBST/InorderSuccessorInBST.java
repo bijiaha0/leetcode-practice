@@ -1,12 +1,18 @@
 package Amazon.InorderSuccessorInBST;
-class TreeNode{
+
+class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(int val){
-        this.val =val;
+
+    TreeNode(int val) {
+        this.val = val;
     }
 }
+
+/**
+ * https://www.jiuzhang.com/solutions/inorder-successor-in-binary-search-tree/
+ */
 public class InorderSuccessorInBST {
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         if (root == null || p == null) {
