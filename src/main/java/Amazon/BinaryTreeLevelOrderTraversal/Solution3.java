@@ -23,7 +23,7 @@ public class Solution3 {
     }
 
     public List<List<Integer>> findLeaves(TreeNode root) {
-        // Write your code here
+
         List<List<Integer>> ans = new ArrayList<>();
 
         Map<Integer, List<Integer>> depth = new HashMap<>();
@@ -32,7 +32,9 @@ public class Solution3 {
         for (int i = 1; i <= max_depth; i++) {
             ans.add(depth.get(i));
         }
+
         return ans;
+
     }
 }
 
