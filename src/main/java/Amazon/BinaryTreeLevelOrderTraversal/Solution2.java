@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * https://www.jiuzhang.com/solutions/binary-tree-leaves-order-traversal/
  * 其实第k层包含的就是所有高度为k的节点
- * 
+ *
  */
 public class Solution2 {
 
