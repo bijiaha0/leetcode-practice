@@ -76,6 +76,7 @@ public class Solution2 {
     }
 
     class Trie {
+
         private TrieNode root;
 
         /**
