@@ -53,4 +53,5 @@ public class Solution {
         }
         return n > 0 ? result : 1 / result;
     }
+
 }
