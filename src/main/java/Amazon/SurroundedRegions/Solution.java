@@ -10,10 +10,13 @@ import java.util.Queue;
 public class Solution {
 
     public void surroundedRegions(char[][] board) {
+
         int n = board.length;
+
         if (n == 0) {
             return;
         }
+
         int m = board[0].length;
 
         for (int i = 0; i < n; i++) {
@@ -36,17 +39,21 @@ public class Solution {
     }
 
     void bfs(char[][] board, int sx, int sy) {
+
         if (board[sx][sy] != 'O') {
             return;
         }
+
         int n = board.length;
         int m = board[0].length;
         int[] dx = {0, 1, 0, -1};
         int[] dy = {1, 0, -1, 0};
+
         Queue<Integer> qx = new LinkedList<>();
         Queue<Integer> qy = new LinkedList<>();
         qx.offer(sx);
         qy.offer(sy);
+
         board[sx][sy] = 'W'; // 'W' -> Water
         while (!qx.isEmpty()) {
             int cx = qx.poll();
