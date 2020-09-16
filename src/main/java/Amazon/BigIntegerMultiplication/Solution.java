@@ -1,9 +1,11 @@
 package Amazon.BigIntegerMultiplication;
 
-/*
+/**
+ * https://www.jiuzhang.com/solutions/add-two-numbers/
  * 高精度乘法的实现
  * 数位相乘ans[i+j] +=a[i]*b[j]
- * */
+ */
+
 public class Solution {
 
     public static String mutiply(String num1, String num2) {

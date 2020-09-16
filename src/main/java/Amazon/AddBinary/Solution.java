@@ -1,8 +1,13 @@
 package Amazon.AddBinary;
 
 /**
- * https://www.lintcode.com/problem/add-binary/description
+ * https://www.jiuzhang.com/solutions/add-binary/
+ *
  * 给定两个二进制字符串，返回他们的和（用二进制表示）。
+ * 输入：
+ * a = "11", b = "1"
+ * 输出：
+ * "100"
  */
 public class Solution {
 

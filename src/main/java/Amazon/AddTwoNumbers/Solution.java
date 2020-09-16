@@ -1,11 +1,12 @@
 package Amazon.AddTwoNumbers;
 
 /**
- * https://www.lintcode.com/problem/add-two-numbers/description
+ * https://www.jiuzhang.com/solutions/add-two-numbers/
  * <p>
- * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
- * Output: 7 -> 0 -> 8
- * Explanation: 342 + 465 = 807.
+ * <p>
+ * 输入: 7->1->6->null, 5->9->2->null
+ * 输出: 2->1->9->null
+ * 样例解释: 617 + 295 = 912, 912 转换成链表:  2->1->9->null
  */
 
 class ListNode {
