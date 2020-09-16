@@ -1,8 +1,6 @@
 package LeetCode.TwoSumII;
 
 /**
- * @author bijh@tsingyun.net
- * @date 2020/4/4 3:35 PM
  * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
  */
 public class Solution {
