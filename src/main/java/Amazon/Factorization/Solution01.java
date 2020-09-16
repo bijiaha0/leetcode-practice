@@ -10,12 +10,14 @@ public class Solution01 {
     List<List<Integer>> ans = new ArrayList<>();
 
     void dfs(int lastF, int remain, List<Integer> item) {
+
         //边界条件
         if (!item.isEmpty()) {
             item.add(remain);
             ans.add(new ArrayList<Integer>(item));
             item.remove(item.size() - 1);
         }
+
         //当前层
         for (int i = lastF; i <= remain / i; i++) {
             if (remain % i == 0) {
