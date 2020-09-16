@@ -21,6 +21,8 @@ import java.util.Queue;
  * 2   2   1  -1
  * 1  -1   2  -1
  * 0  -1   3   4
+ *
+ * https://www.jiuzhang.com/solutions/nearest-exit/
  */
 public class Solution {
     static final int INF = Integer.MAX_VALUE;
