@@ -1,5 +1,6 @@
 package Amazon.Trie;
 import java.util.HashMap;
+
 class TrieNode {
     char c;
     boolean hasWord;
@@ -9,6 +10,7 @@ class TrieNode {
         this.c = c;
     }
 }
+
 public class Trie {
     private TrieNode root;
     public Trie() {
@@ -33,6 +35,7 @@ public class Trie {
             }
         }
     }
+
     public boolean search(String word) {
         if(searchWordNodePos(word) == null){
             return false;
@@ -40,11 +43,13 @@ public class Trie {
             return true;
         else return false;
     }
+
     public boolean startsWith(String prefix) {
         if(searchWordNodePos(prefix) == null){
             return false;
         } else return true;
     }
+
     public TrieNode searchWordNodePos(String s){
         HashMap<Character, TrieNode> children = root.children;
         TrieNode cur = null;
@@ -60,4 +65,5 @@ public class Trie {
         }
         return cur;
     }
+
 }
