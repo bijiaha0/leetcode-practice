@@ -1,7 +1,17 @@
 package Amazon.LetterCombinationsOfAPhoneNumber;
+
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * https://www.jiuzhang.com/solutions/letter-combinations-of-a-phone-number/
+ * <p>
+ * 给一个不包含0和1的数字字符串，每个数字代表一个字母，请返回其所有可能的字母组合。
+ * <p>
+ * 下图的手机按键图，就表示了每个数字可以代表的字母。
+ */
 public class Solution {
+
     public List<String> letterCombinations(String digits) {
         String[] phone = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         List<String> ans = new ArrayList<>();
@@ -11,6 +21,7 @@ public class Solution {
         dfs(0, digits.length(), "", digits, phone, ans);
         return ans;
     }
+
     private void dfs(int x, int l, String str, String digits, String[] phone, List<String> ans) {
         if (x == l) {//退出
             ans.add(str);
@@ -21,4 +32,5 @@ public class Solution {
             dfs(x + 1, l, str + c, digits, phone, ans);
         }
     }
+
 }
