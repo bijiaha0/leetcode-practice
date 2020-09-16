@@ -4,8 +4,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- *
  * 给一个二维的矩阵，包含 'X' 和 'O', 找到所有被 'X' 围绕的区域，并用 'X' 替换其中所有的 'O'。
+ * <p>
+ * https://www.jiuzhang.com/solutions/surrounded-regions/
  */
 public class Solution {
 
@@ -23,10 +24,12 @@ public class Solution {
             bfs(board, i, 0);
             bfs(board, i, m - 1);
         }
+
         for (int j = 0; j < m; j++) {
             bfs(board, 0, j);
             bfs(board, n - 1, j);
         }
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (board[i][j] == 'W') {
@@ -36,6 +39,7 @@ public class Solution {
                 }
             }
         }
+
     }
 
     void bfs(char[][] board, int sx, int sy) {
@@ -68,5 +72,6 @@ public class Solution {
                 }
             }
         }
+
     }
 }
