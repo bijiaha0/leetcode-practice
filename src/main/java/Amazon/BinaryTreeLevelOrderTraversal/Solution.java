@@ -1,4 +1,5 @@
 package Amazon.BinaryTreeLevelOrderTraversal;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -7,6 +8,7 @@ import java.util.Queue;
 class TreeNode {
     public int val;
     public TreeNode left, right;
+
     public TreeNode(int val) {
         this.val = val;
         this.left = this.right = null;
@@ -16,10 +18,13 @@ class TreeNode {
 public class Solution {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
+
         List result = new ArrayList();
+
         if (root == null) {
             return result;
         }
+
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         queue.offer(root);
         while (!queue.isEmpty()) {
@@ -37,7 +42,9 @@ public class Solution {
             }
             result.add(level);
         }
+
         return result;
+
     }
 
 }

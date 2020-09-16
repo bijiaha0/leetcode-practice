@@ -12,9 +12,11 @@ import java.util.Map;
 public class Solution3 {
 
     int dfs(TreeNode cur, Map<Integer, List<Integer>> depth) {
+
         if (cur == null) {
             return 0;
         }
+
         int d = Math.max(dfs(cur.left, depth), dfs(cur.right, depth)) + 1;
 
         depth.putIfAbsent(d, new ArrayList<>());
