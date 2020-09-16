@@ -14,14 +14,18 @@ import java.util.List;
  * 输出:
  * ["1*2*3","1+2+3"]
  */
+
 public class Solution {
+
     void dfs(String num, int target, int start, String str, long sum, long lastF, List<String> ans) {
+
         if (start == num.length()) {
             if (sum == target) {
                 ans.add(str);
             }
             return;
         }
+
         for (int i = start; i < num.length(); i++) {
             long x = Long.parseLong(num.substring(start, i + 1));
             /*
@@ -41,6 +45,7 @@ public class Solution {
                 break;
             }
         }
+
     }
 
     public List<String> addOperators(String num, int target) {
