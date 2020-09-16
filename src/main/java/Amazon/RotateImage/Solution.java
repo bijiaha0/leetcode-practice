@@ -1,7 +1,9 @@
 package Amazon.RotateImage;
 
 /**
- * https://www.lintcode.com/problem/rotate-image/description
+ * https://www.jiuzhang.com/solutions/rotate-image/
+ * <p>
+ * 给定一个N×N的二维矩阵表示图像，90度顺时针旋转图像。
  */
 public class Solution {
     public void rotate(int[][] matrix) {

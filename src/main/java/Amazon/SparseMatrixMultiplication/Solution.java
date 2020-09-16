@@ -2,12 +2,12 @@ package Amazon.SparseMatrixMultiplication;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Email: clickgwas@gmail.com
  * 矩阵乘法----->稀疏矩阵乘法
- * https://www.lintcode.com/problem/sparse-matrix-multiplication/description
- * linkin
+ *
+ * https://www.jiuzhang.com/solutions/sparse-matrix-multiplication/
  */
 public class Solution {
+
     public int[][] multiply(int[][] A, int[][] B) {
         // 矩阵A的列数和矩阵B的行数相等
         int n = A.length;
@@ -24,6 +24,7 @@ public class Solution {
         }
         return C;
     }
+
     public int[][] multiply1(int[][] A, int[][] B) {
         int n = A.length;
         int m = B[0].length;
