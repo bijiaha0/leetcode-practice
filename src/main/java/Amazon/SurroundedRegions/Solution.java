@@ -1,7 +1,14 @@
 package Amazon.SurroundedRegions;
+
 import java.util.LinkedList;
 import java.util.Queue;
+
+/**
+ * 
+ * 给一个二维的矩阵，包含 'X' 和 'O', 找到所有被 'X' 围绕的区域，并用 'X' 替换其中所有的 'O'。
+ */
 public class Solution {
+
     public void surroundedRegions(char[][] board) {
         int n = board.length;
         if (n == 0) {
@@ -27,14 +34,15 @@ public class Solution {
             }
         }
     }
+
     void bfs(char[][] board, int sx, int sy) {
         if (board[sx][sy] != 'O') {
             return;
         }
         int n = board.length;
         int m = board[0].length;
-        int[] dx = { 0, 1, 0, -1 };
-        int[] dy = { 1, 0, -1, 0 };
+        int[] dx = {0, 1, 0, -1};
+        int[] dy = {1, 0, -1, 0};
         Queue<Integer> qx = new LinkedList<>();
         Queue<Integer> qy = new LinkedList<>();
         qx.offer(sx);
