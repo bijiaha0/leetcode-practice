@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+
 class TreeNode {
     public int val;
     public TreeNode left, right;
@@ -11,7 +12,9 @@ class TreeNode {
         this.left = this.right = null;
     }
 }
+
 public class Solution {
+
     public List<List<Integer>> levelOrder(TreeNode root) {
         List result = new ArrayList();
         if (root == null) {
@@ -36,4 +39,6 @@ public class Solution {
         }
         return result;
     }
+
 }
+
