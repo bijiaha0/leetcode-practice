@@ -17,7 +17,7 @@ public class Solution {
 
         double r = powx(x, n / 2);
 
-        //偶数还是奇数
+        //判断n是偶数还是奇数
         return (n & 1) == 1 ? x * r * r : r * r;
 
     }
