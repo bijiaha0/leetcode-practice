@@ -1,8 +1,14 @@
 package Amazon.Factorization;
+
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * https://www.jiuzhang.com/solutions/factorization/
+ */
 public class Solution01 {
     List<List<Integer>> ans = new ArrayList<>();
+
     void dfs(int lastF, int remain, List<Integer> item) {
         //边界条件
         if (!item.isEmpty()) {
@@ -19,6 +25,7 @@ public class Solution01 {
             }
         }
     }
+
     public List<List<Integer>> getFactors(int n) {
         dfs(2, n, new ArrayList<Integer>());
         return ans;
