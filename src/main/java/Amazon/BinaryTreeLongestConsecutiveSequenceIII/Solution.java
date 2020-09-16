@@ -1,7 +1,6 @@
 package Amazon.BinaryTreeLongestConsecutiveSequenceIII;
 import java.util.List;
 /**
- * Email: clickgwas@gmail.com
  * https://www.jiuzhang.com/solution/binary-tree-longest-consecutive-sequence-iii/
  */
 
