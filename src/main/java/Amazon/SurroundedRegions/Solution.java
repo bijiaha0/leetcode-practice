@@ -7,6 +7,28 @@ import java.util.Queue;
  * 给一个二维的矩阵，包含 'X' 和 'O', 找到所有被 'X' 围绕的区域，并用 'X' 替换其中所有的 'O'。
  * <p>
  * https://www.jiuzhang.com/solutions/surrounded-regions/
+ * <p>
+ * 输入:
+ * X X X X
+ * X O O X
+ * X X O X
+ * X O X X
+ * 输出:
+ * X X X X
+ * X X X X
+ * X X X X
+ * X O X X
+ * --------------
+ * 输入:
+ * X X X X
+ * X O O X
+ * X O O X
+ * X O X X
+ * 输出:
+ * X X X X
+ * X O O X
+ * X O O X
+ * X O X X
  */
 public class Solution {
 
