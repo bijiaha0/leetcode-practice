@@ -1,4 +1,5 @@
 package Amazon.WordSquares;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -8,22 +9,32 @@ import java.util.Map;
  * 给出一系列 不重复的单词，找出所有用这些单词能构成的 单词矩阵。
  * 一个有效的单词矩阵是指, 如果从第 k 行读出来的单词和第 k 列读出来的单词相同(0 <= k < max(numRows, numColumns))，那么就是一个单词矩阵.
  * 例如，单词序列为 ["ball","area","lead","lady"] ,构成一个单词矩阵。因为对于每一行和每一列，读出来的单词都是相同的。
- *
+ * <p>
+ * 输入:
+ * ["area","lead","wall","lady","ball"]
+ * 输出:
+ * [["wall","area","lead","lady"],["ball","area","lead","lady"]]
+ * <p>
+ * 解释:
+ * 输出包含 两个单词矩阵，这两个矩阵的输出的顺序没有影响(只要求矩阵内部有序)。
+ * <p>
  * https://www.jiuzhang.com/solutions/word-squares/
  */
 public class Solution {
 
     void initPrefix(String[] words, Map<String, List<String>> hash) {
+
         for (String item : words) {
             //如果给定的key不存在（或者key对应的value为null），关联给定的key和给定的value，并返回null；如果存在，返回当前值（不会把value放进去）；
-            hash.getOrDefault("",new ArrayList<>()).add(item);
+            hash.getOrDefault("", new ArrayList<>()).add(item);
 
             String prefix = "";
             for (char c : item.toCharArray()) {
                 prefix += c;
-                hash.getOrDefault(prefix,new ArrayList<>()).add(item);
+                hash.getOrDefault(prefix, new ArrayList<>()).add(item);
             }
         }
+
     }
 
     boolean checkPrefix(int l, String nextWord, int wordLen, Map<String, List<String>> hash, List<String> squares) {
@@ -65,6 +76,7 @@ public class Solution {
     }
 
     public List<List<String>> wordSquares(String[] words) {
+
         List<List<String>> ans = new ArrayList<>();
         if (words.length == 0) {
             return ans;
@@ -75,6 +87,7 @@ public class Solution {
         List<String> squares = new ArrayList<>();
         dfs(0, words[0].length(), hash, squares, ans);
         return ans;
+        
     }
 
 }
