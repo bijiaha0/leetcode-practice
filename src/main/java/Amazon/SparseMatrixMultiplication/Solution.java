@@ -47,7 +47,7 @@ public class Solution {
     }
 
     public int[][] multiply2(int[][] A, int[][] B) {
-        
+
         int n = A.length;
         int m = B[0].length;
         int t = A[0].length;

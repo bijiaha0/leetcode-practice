@@ -1,4 +1,5 @@
 package LeetCode.AddString;
+
 public class Solution {
     public String addStrings(String num1, String num2) {
         if (num1 == null || num1.length() == 0) {
@@ -14,12 +15,12 @@ public class Solution {
         while (l1 >= 0 || l2 >= 0) {
             int digis1 = l1 < 0 ? 0 : num1.charAt(l1) - '0';
             int digis2 = l2 < 0 ? 0 : num2.charAt(l2) - '0';
-            res.append((mod+digis1+digis2)%10);
-            mod =(mod+digis1+digis2)/10;
+            res.append((mod + digis1 + digis2) % 10);
+            mod = (mod + digis1 + digis2) / 10;
             l1--;
             l2--;
         }
-        if(mod==1){
+        if (mod == 1) {
             res.append('1');
         }
         return res.reverse().toString();

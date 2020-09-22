@@ -1,13 +1,10 @@
 package LeetCode.FeiBoNaQie;
 import java.util.Arrays;
 /**
- * Author: bijiaha0
- * Date: 2019-04-23
- * Time: 12:15
- * Email: clickgwas@gmail.com
- * recursion
+ *
  */
 public class Solution {
+
     public static int fei(int n) {
 
         if (n < 1) {
@@ -35,11 +32,4 @@ public class Solution {
 
     }
 
-    public static void main(String[] args) {
-
-        for(int j =1; j<=6; j++){
-            System.out.println(fei(j));
-        }
-
-    }
 }
