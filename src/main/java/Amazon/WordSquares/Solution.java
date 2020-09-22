@@ -25,7 +25,6 @@ public class Solution {
     void initPrefix(String[] words, Map<String, List<String>> hash) {
 
         for (String item : words) {
-            //如果给定的key不存在（或者key对应的value为null），关联给定的key和给定的value，并返回null；如果存在，返回当前值（不会把value放进去）；
             hash.getOrDefault("", new ArrayList<>()).add(item);
 
             String prefix = "";
@@ -38,7 +37,9 @@ public class Solution {
     }
 
     boolean checkPrefix(int l, String nextWord, int wordLen, Map<String, List<String>> hash, List<String> squares) {
+
         for (int j = l + 1; j < wordLen; j++) {
+
             String prefix = "";
             //k是竖着往下走
             for (int k = 0; k < l; k++) {
@@ -48,12 +49,16 @@ public class Solution {
             if (!hash.containsKey(prefix)) {
                 return false;
             }
+
         }
+
         return true;
+
     }
 
     //squares用的是滚动的方式
     void dfs(int l, int wordLen, Map<String, List<String>> hash, List<String> squares, List<List<String>> ans) {
+
         //退出条件
         if (l == wordLen) {
             ans.add(new ArrayList<>(squares));
@@ -63,8 +68,10 @@ public class Solution {
         for (int i = 0; i < l; i++) {
             prefix += squares.get(i).charAt(l);
         }
+
         //冗余1
         for (String item : hash.get(prefix)) {
+
             //冗余2
             if (!checkPrefix(l, item, wordLen, hash, squares)) {
                 continue;
@@ -72,7 +79,9 @@ public class Solution {
             squares.add(item);
             dfs(l + 1, wordLen, hash, squares, ans);
             squares.remove(squares.size() - 1);
+            
         }
+
     }
 
     public List<List<String>> wordSquares(String[] words) {
@@ -87,7 +96,7 @@ public class Solution {
         List<String> squares = new ArrayList<>();
         dfs(0, words[0].length(), hash, squares, ans);
         return ans;
-        
+
     }
 
 }
