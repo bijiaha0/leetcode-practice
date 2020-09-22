@@ -18,10 +18,10 @@ public class Solution {
      * @return an integer, the number of ways decoding
      */
     public static int numDecodings(String s) {
-        // Write your code here
+
         int l = s.length();
         if (l == 0) {
-            return 0;   // only for this problem, but the ans should be 1
+            return 0;
         }
         int[] f = new int[l + 1];
         f[0] = 1;
@@ -39,10 +39,7 @@ public class Solution {
             }
         }
         return f[l];
+
     }
 
-    public static void main(String[] args) {
-        int i = numDecodings("1234324");
-        System.out.println(i);
-    }
 }
