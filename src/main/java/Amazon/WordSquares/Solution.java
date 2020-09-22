@@ -20,6 +20,7 @@ import java.util.Map;
  * <p>
  * https://www.jiuzhang.com/solutions/word-squares/
  */
+
 public class Solution {
 
     void initPrefix(String[] words, Map<String, List<String>> hash) {
@@ -79,7 +80,7 @@ public class Solution {
             squares.add(item);
             dfs(l + 1, wordLen, hash, squares, ans);
             squares.remove(squares.size() - 1);
-            
+
         }
 
     }

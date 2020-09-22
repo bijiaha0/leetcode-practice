@@ -1,9 +1,11 @@
 package Amazon.SparseMatrixMultiplication;
+
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * 矩阵乘法----->稀疏矩阵乘法
- *
+ * <p>
  * https://www.jiuzhang.com/solutions/sparse-matrix-multiplication/
  */
 public class Solution {
@@ -43,7 +45,9 @@ public class Solution {
         }
         return C;
     }
+
     public int[][] multiply2(int[][] A, int[][] B) {
+        
         int n = A.length;
         int m = B[0].length;
         int t = A[0].length;
@@ -57,16 +61,18 @@ public class Solution {
                 }
             }
         }
+
         for (int i = 0; i < n; i++) {
             for (int k = 0; k < t; k++) {
                 if (A[i][k] == 0) {
                     continue;
                 }
-                for (int j: col.get(k)) {
+                for (int j : col.get(k)) {
                     C[i][j] += A[i][k] * B[k][j];
                 }
             }
         }
+
         return C;
     }
 }
