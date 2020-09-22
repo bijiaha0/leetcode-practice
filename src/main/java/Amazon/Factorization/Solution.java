@@ -29,6 +29,7 @@ public class Solution {
             if (remain % i == 0) {
                 path.add(i);
                 dfs(i, remain / i);
+                //改变的记录状态的数组，可以放在成员变量中，在DFS时滚动。
                 path.remove(path.size() - 1);
             }
         }

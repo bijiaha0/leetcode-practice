@@ -7,6 +7,7 @@ import java.util.List;
  * https://www.jiuzhang.com/solutions/factorization/
  */
 public class Solution01 {
+
     List<List<Integer>> ans = new ArrayList<>();
 
     void dfs(int lastF, int remain, List<Integer> item) {
@@ -26,10 +27,12 @@ public class Solution01 {
                 dfs(i, remain / i, new_item);
             }
         }
+
     }
 
     public List<List<Integer>> getFactors(int n) {
         dfs(2, n, new ArrayList<Integer>());
         return ans;
     }
+
 }

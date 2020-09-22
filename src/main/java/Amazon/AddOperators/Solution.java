@@ -33,11 +33,14 @@ public class Solution {
              * */
             if (start == 0) {
                 dfs(num, target, i + 1, "" + x, x, x, ans);
-            } else {
+            }
+
+            else {
                 dfs(num, target, i + 1, str + "*" + x, sum - lastF + lastF * x, lastF * x, ans);
                 dfs(num, target, i + 1, str + "+" + x, sum + x, x, ans);
                 dfs(num, target, i + 1, str + "-" + x, sum - x, -x, ans);
             }
+
             /*
              * 数字不能有前导0     2543+034
              * */
@@ -53,4 +56,5 @@ public class Solution {
         dfs(num, target, 0, "", 0, 0, ans);
         return ans;
     }
+
 }
