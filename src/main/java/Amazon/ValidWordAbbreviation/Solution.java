@@ -1,13 +1,19 @@
 package Amazon.ValidWordAbbreviation;
+
 /*
-* https://www.lintcode.com/problem/valid-word-abbreviation/solution
-* */
+ * https://www.lintcode.com/problem/valid-word-abbreviation/solution
+ * */
 public class Solution {
+
     public boolean validWordAbbreviation(String word, String abbr) {
-        int i = 0, j =0;
+
+        int i = 0, j = 0;
+
         char[] s = word.toCharArray();
         char[] t = abbr.toCharArray();
+
         while (i < s.length && j < t.length) {
+
             if (Character.isDigit(t[j])) {
                 if (t[j] == '0') {
                     return false;
@@ -23,7 +29,11 @@ public class Solution {
                     return false;
                 }
             }
+
         }
+
         return i == s.length && j == t.length;
+
     }
+
 }
