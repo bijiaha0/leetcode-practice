@@ -1,4 +1,4 @@
-package PlayWithAlgorithmInterview.DynamicProgramming.DecodeWays;
+package dp.DecodeWays;
 /**
  动态规划.
  设定状态: f[i] 表示字符串前i位有多少种解码方案
