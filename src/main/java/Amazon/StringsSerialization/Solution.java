@@ -3,13 +3,10 @@ package Amazon.StringsSerialization;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author bijh@tsingyun.net
- * @date 2020/9/15 8:43 AM
- */
 public class Solution {
 
     public String encode(List<String> strs) {
+
         StringBuilder ans = new StringBuilder();
         for (String s : strs) {
             for (char c : s.toCharArray()) {
@@ -22,6 +19,7 @@ public class Solution {
             ans.append(":;");                    // ; connector
         }
         return ans.toString();
+
     }
 
     public List<String> decode(String str) {
@@ -30,6 +28,7 @@ public class Solution {
         char[] sc = str.toCharArray();
         StringBuilder item = new StringBuilder();
         int i = 0;
+
         while (i < str.length()) {
             if (sc[i] == ':') {                  //escape
                 if (sc[i + 1] == ';') {          // ; connector
@@ -45,6 +44,7 @@ public class Solution {
                 i += 1;
             }
         }
+
         return ans;
 
     }

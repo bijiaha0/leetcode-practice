@@ -67,4 +67,27 @@ public class Solution {
         return maxLen;
     }
 
+
+    public int lengthLongestPath3(String input) {
+
+        if (input.length() == 0) {
+            return 0;
+        }
+
+        int ans = 0;
+        int[] sum = new int[input.length() + 1];
+
+        for (String line : input.split("\n")) {
+            int level = line.lastIndexOf('\t') + 1;
+            int len = line.length() - level; //remove \t (level - 1 = \t的长度)
+            if (line.contains(".")) {
+                ans = Math.max(ans, sum[level] + len);
+            } else {
+                sum[level+1] = sum[level] + len + 1; //len = remove \t ,1 = add /
+            }
+        }
+
+        return ans;
+    }
+
 }
