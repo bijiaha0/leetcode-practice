@@ -7,14 +7,9 @@ import java.util.List;
  * @author bijh@tsingyun.net
  * @date 2020/9/15 8:43 AM
  */
-// version: 高频题班
 public class Solution {
-    /**
-     * @param strs a list of strings
-     * @return encodes a list of strings to a single string.
-     */
+
     public String encode(List<String> strs) {
-        // Write your code here
         StringBuilder ans = new StringBuilder();
         for (String s : strs) {
             for (char c : s.toCharArray()) {
@@ -29,12 +24,8 @@ public class Solution {
         return ans.toString();
     }
 
-    /**
-     * @param str a string
-     * @return dcodes a single string to a list of strings
-     */
     public List<String> decode(String str) {
-        // Write your code here
+
         List<String> ans = new ArrayList<>();
         char[] sc = str.toCharArray();
         StringBuilder item = new StringBuilder();
@@ -55,5 +46,6 @@ public class Solution {
             }
         }
         return ans;
+
     }
 }
