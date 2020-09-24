@@ -13,12 +13,17 @@ import java.util.Set;
  * 解释 : 这个最长的连续序列是 [1, 2, 3, 4]. 返回所求长度 4
  */
 public class Solution {
+
     public int longestConsecutive(int[] num) {
+
         Set<Integer> set = new HashSet<>();
+
         for (int item : num) {
             set.add(item);
         }
+
         int ans = 0;
+
         for (int item : num) {
             if (set.contains(item)) {
                 set.remove(item);
@@ -35,6 +40,9 @@ public class Solution {
                 ans = Math.max(ans, r - l - 1);
             }
         }
+
         return ans;
+
     }
+
 }

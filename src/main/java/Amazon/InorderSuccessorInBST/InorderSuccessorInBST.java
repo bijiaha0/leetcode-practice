@@ -14,6 +14,7 @@ class TreeNode {
  * https://www.jiuzhang.com/solutions/inorder-successor-in-binary-search-tree/
  */
 public class InorderSuccessorInBST {
+
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         if (root == null || p == null) {
             return null;
@@ -25,4 +26,5 @@ public class InorderSuccessorInBST {
             return (left != null) ? left : root;
         }
     }
+
 }

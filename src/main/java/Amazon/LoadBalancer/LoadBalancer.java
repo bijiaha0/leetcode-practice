@@ -14,11 +14,13 @@ public class LoadBalancer {
     }
 
     public void add(int server_id) {
+
         if (!pos.containsKey(server_id)) {
             array.add(server_id);
             pos.put(server_id, n);
             n++;
         }
+
     }
 
     public void remove(int server_id) {
