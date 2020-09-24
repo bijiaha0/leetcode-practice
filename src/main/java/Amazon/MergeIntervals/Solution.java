@@ -25,10 +25,12 @@ class Interval {
 public class Solution {
 
     public List<Interval> merge(List<Interval> intervals) {
+
         List<Interval> ans = new ArrayList<>();
         if (intervals == null) {
             return ans;
         }
+
         intervals.sort(Comparator.comparing(i -> i.start));  //lambda 匿名函数：输入i  返回i.start
         Interval last = null;
         for (Interval item : intervals) {
@@ -39,7 +41,9 @@ public class Solution {
                 last.end = Math.max(last.end, item.end); // Modify the element already in list
             }
         }
+
         return ans;
+
     }
 
 }

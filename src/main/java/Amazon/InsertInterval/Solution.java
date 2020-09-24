@@ -24,6 +24,7 @@ import java.util.List;
  * 使用 Merge Interval
  */
 class Interval {
+
     int start;
     int end;
 
@@ -31,6 +32,7 @@ class Interval {
         this.start = start;
         this.end = end;
     }
+    
 }
 
 public class Solution {
