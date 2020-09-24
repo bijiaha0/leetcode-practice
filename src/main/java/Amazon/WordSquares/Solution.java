@@ -42,11 +42,14 @@ public class Solution {
         for (int j = l + 1; j < wordLen; j++) {
 
             String prefix = "";
+
             //k是竖着往下走
             for (int k = 0; k < l; k++) {
                 prefix += squares.get(k).charAt(j);
             }
+
             prefix += nextWord.charAt(j);
+            
             if (!hash.containsKey(prefix)) {
                 return false;
             }

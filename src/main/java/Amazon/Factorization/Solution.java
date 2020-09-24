@@ -25,7 +25,7 @@ public class Solution {
             path.remove(path.size() - 1);
         }
 
-        //当前层
+        //当前层:因子是递增的
         for (int i = start; i <= remain / i; i++) {
 
             //整除
