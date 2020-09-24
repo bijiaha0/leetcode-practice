@@ -11,6 +11,7 @@ import java.util.*;
  * 能合并 ---> 就合并
  * */
 class Interval {
+
     int start;
     int end;
 
@@ -18,9 +19,11 @@ class Interval {
         this.start = start;
         this.end = end;
     }
+
 }
 
 public class Solution {
+
     public List<Interval> merge(List<Interval> intervals) {
         List<Interval> ans = new ArrayList<>();
         if (intervals == null) {
@@ -38,4 +41,5 @@ public class Solution {
         }
         return ans;
     }
+
 }

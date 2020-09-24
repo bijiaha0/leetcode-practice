@@ -61,9 +61,7 @@ public class Solution {
             if (inputStr.contains(".")) {
                 maxLen = Math.max(maxLen, newLen - 1);
             }
-
         }
-
         return maxLen;
     }
 
