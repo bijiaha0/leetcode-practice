@@ -32,7 +32,7 @@ class Interval {
         this.start = start;
         this.end = end;
     }
-    
+
 }
 
 public class Solution {
