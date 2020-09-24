@@ -1,5 +1,9 @@
 package Amazon.InorderSuccessorInBST;
 
+
+/**
+ * https://www.jiuzhang.com/solutions/inorder-successor-in-binary-search-tree/
+ */
 class TreeNode {
     int val;
     TreeNode left;
@@ -10,9 +14,6 @@ class TreeNode {
     }
 }
 
-/**
- * https://www.jiuzhang.com/solutions/inorder-successor-in-binary-search-tree/
- */
 public class InorderSuccessorInBST {
 
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
