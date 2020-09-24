@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * @author bijh@tsingyun.net
  * @date 2020/9/16 8:44 AM
- * 
+ *
  * https://www.jiuzhang.com/solutions/binary-tree-leaves-order-traversal/
  */
 public class Solution3 {

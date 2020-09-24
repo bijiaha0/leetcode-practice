@@ -21,7 +21,7 @@ import java.util.Queue;
  * 2   2   1  -1
  * 1  -1   2  -1
  * 0  -1   3   4
- *
+ * <p>
  * https://www.jiuzhang.com/solutions/nearest-exit/
  */
 public class Solution {
@@ -30,6 +30,7 @@ public class Solution {
     int n, m;
 
     public void wallsAndGates(int[][] rooms) {
+
         n = rooms.length;
         if (n == 0) {
             return;
@@ -65,5 +66,6 @@ public class Solution {
                 }
             }
         }
+
     }
 }
