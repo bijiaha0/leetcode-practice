@@ -75,11 +75,15 @@ public class Trie {
     }
 
     public TrieNode searchWordNodePos(String s) {
+
         HashMap<Character, TrieNode> children = root.children;
+
         TrieNode cur = null;
-        char[] sArray = s.toCharArray();
-        for (int i = 0; i < sArray.length; i++) {
-            char c = sArray[i];
+
+        char[] charArray = s.toCharArray();
+
+        for (int i = 0; i < charArray.length; i++) {
+            char c = charArray[i];
             if (children.containsKey(c)) {
                 cur = children.get(c);
                 children = cur.children;
@@ -87,6 +91,7 @@ public class Trie {
                 return null;
             }
         }
+
         return cur;
     }
 
