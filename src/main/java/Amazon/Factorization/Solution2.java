@@ -7,8 +7,14 @@ import java.util.List;
 /**
  * @author bijh@tsingyun.net
  * @date 2020/9/27 3:12 PM
- *
+ * <p>
  * https://www.programcreek.com/2014/07/leetcode-factor-combinations-java/
+ * <p>
+ * https://www.jiuzhang.com/solutions/factorization/
+ * <p>
+ * 输入：8
+ * 输出： [[2,2,2],[2,4]]
+ * 解释： 8 = 2 x 2 x 2 = 2 x 4
  */
 public class Solution2 {
 
