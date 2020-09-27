@@ -56,22 +56,19 @@ public class Trie {
 
     public boolean search(String word) {
 
-        if (searchWordNodePos(word) == null) {
-            return false;
-        } else if (searchWordNodePos(word).hasWord) {
+        if (searchWordNodePos(word).hasWord) {
             return true;
-        } else {
-            return false;
         }
+
+        return false;
 
     }
 
     public boolean startsWith(String prefix) {
         if (searchWordNodePos(prefix) == null) {
             return false;
-        } else {
-            return true;
         }
+        return true;
     }
 
     public TrieNode searchWordNodePos(String s) {
