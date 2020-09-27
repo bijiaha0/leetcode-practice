@@ -2,6 +2,9 @@ package Amazon.Trie;
 
 import java.util.HashMap;
 
+/**
+ * Trie 树
+ */
 class TrieNode {
 
     char c;
