@@ -49,7 +49,7 @@ public class Solution {
             }
 
             prefix += nextWord.charAt(j);
-            
+
             if (!hash.containsKey(prefix)) {
                 return false;
             }

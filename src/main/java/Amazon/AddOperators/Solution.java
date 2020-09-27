@@ -14,11 +14,11 @@ import java.util.List;
  * 输出:
  * ["1*2*3","1+2+3"]
  */
-
 public class Solution {
 
     void dfs(String num, int target, int start, String str, long sum, long lastF, List<String> ans) {
 
+        //边界条件
         if (start == num.length()) {
             if (sum == target) {
                 ans.add(str);
@@ -27,15 +27,17 @@ public class Solution {
         }
 
         for (int i = start; i < num.length(); i++) {
+
+            //取x
             long x = Long.parseLong(num.substring(start, i + 1));
+
             /*
              * 第一个数字前不能有符号  +3456-23
+             * 扩展
              * */
             if (start == 0) {
                 dfs(num, target, i + 1, "" + x, x, x, ans);
-            }
-
-            else {
+            } else {
                 dfs(num, target, i + 1, str + "*" + x, sum - lastF + lastF * x, lastF * x, ans);
                 dfs(num, target, i + 1, str + "+" + x, sum + x, x, ans);
                 dfs(num, target, i + 1, str + "-" + x, sum - x, -x, ans);
@@ -50,6 +52,7 @@ public class Solution {
         }
 
     }
+
 
     public List<String> addOperators(String num, int target) {
         List<String> ans = new ArrayList<>();
