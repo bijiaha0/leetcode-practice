@@ -28,16 +28,13 @@ public class Solution {
 
     private void dfs(int x, int l, String str, String digits, String[] phone, List<String> ans) {
 
-        //退出
         if (x == l) {
             ans.add(str);
             return;
         }
 
-        //让字符变成真实的数字
         int d = digits.charAt(x) - '0';
 
-        //扩展
         for (char c : phone[d].toCharArray()) {
             dfs(x + 1, l, str + c, digits, phone, ans);
         }
