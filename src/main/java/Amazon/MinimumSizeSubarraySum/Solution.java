@@ -40,6 +40,6 @@ public class Solution {
                 sum -= arr[left++];
             }
         }
-        return ans;
+        return ans == Integer.MAX_VALUE ? -1 : ans;
     }
 }
