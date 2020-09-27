@@ -8,6 +8,8 @@ package Amazon.MinimumSizeSubarraySum;
  * <p>
  * For example, given the array [2,3,1,2,4,3] and s = 7,
  * the subarray [4,3] has the minimal length of 2 under the problem constraint.
+ * <p>
+ * https://www.jiuzhang.com/solutions/minimum-size-subarray-sum/
  */
 public class Solution {
     // 时间复杂度是O(n)

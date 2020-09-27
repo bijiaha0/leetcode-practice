@@ -36,7 +36,6 @@ public class Trie {
         char[] wordArray = word.toCharArray();
 
         for (int i = 0; i < wordArray.length; i++) {
-
             TrieNode cur;
             char wc = wordArray[i];
 
