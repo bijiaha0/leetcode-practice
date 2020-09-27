@@ -19,19 +19,19 @@ import java.util.List;
 public class Solution2 {
 
     public List<List<Integer>> getFactors(int n) {
-        List<List<Integer>> result = new ArrayList<List<Integer>>();
-        List<Integer> list = new ArrayList<Integer>();
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         dfs(2, 1, n, result, list);
         return result;
     }
 
     public void dfs(int start, int product, int n, List<List<Integer>> result, List<Integer> curr) {
-        if (start > n || product > n)
+        if (start > n || product > n) {
             return;
+        }
 
         if (product == n) {
-            ArrayList<Integer> t = new ArrayList<Integer>(curr);
-            result.add(t);
+            result.add(new ArrayList<>(curr));
             return;
         }
 
