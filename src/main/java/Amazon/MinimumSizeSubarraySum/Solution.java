@@ -12,6 +12,7 @@ package Amazon.MinimumSizeSubarraySum;
  * https://www.jiuzhang.com/solutions/minimum-size-subarray-sum/
  */
 public class Solution {
+
     // 时间复杂度是O(n)
     public static Integer solve(int[] arr, int k) {
         int i, j = 0, sum = 0, n = arr.length, ans = Integer.MAX_VALUE;

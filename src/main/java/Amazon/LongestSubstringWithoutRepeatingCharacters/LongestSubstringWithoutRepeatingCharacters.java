@@ -1,5 +1,8 @@
 package Amazon.LongestSubstringWithoutRepeatingCharacters;
 
+/**
+ * https://www.jiuzhang.com/solutions/longest-substring-without-repeating-characters/
+ */
 public class LongestSubstringWithoutRepeatingCharacters {
 
     public int lengthOfLongestSubstring(String s) {
