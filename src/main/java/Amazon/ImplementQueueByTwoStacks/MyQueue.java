@@ -34,13 +34,14 @@ public class MyQueue {
     public boolean empty() {
         return inputbuf.empty() && output.empty();
     }
-}
 
-/**
- * Your MyQueue object will be instantiated and called as such:
- * MyQueue obj = new MyQueue();
- * obj.push(x);
- * int param_2 = obj.pop();
- * int param_3 = obj.peek();
- * boolean param_4 = obj.empty();
- */
+
+    public static void main(String[] args) {
+         MyQueue obj = new MyQueue();
+         obj.push(1);
+         int param_2 = obj.pop();
+         int param_3 = obj.peek();
+         boolean param_4 = obj.empty();
+    }
+
+}
