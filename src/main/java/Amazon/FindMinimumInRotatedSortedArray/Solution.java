@@ -10,9 +10,9 @@ public class Solution {
             return -1;
         }
         int start = 0;
-        int end = nums.length;
+        int end = nums.length-1;
         int target = nums[0];
-        while (start < end - 1) {
+        while (start < end) {
             int mid = start + (end - start) / 2;
             if (target >= nums[mid]) {
                 end = mid;
@@ -20,7 +20,7 @@ public class Solution {
                 start = mid;
             }
         }
-        return Math.min(nums[start], nums[end]);
+        return nums[end];
     }
 
 }
