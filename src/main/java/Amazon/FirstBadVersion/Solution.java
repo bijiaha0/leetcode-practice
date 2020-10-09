@@ -18,7 +18,7 @@ public class Solution {
         while (left <= right) {
             int mid = left + (right - left) / 2;
             if (GitRepo.isBadVersion(mid)) {
-                if (mid == 0 || !GitRepo.isBadVersion(mid - 1)) {
+                if (mid == 1 || !GitRepo.isBadVersion(mid - 1)) {
                     return mid;
                 }
                 right = mid - 1;

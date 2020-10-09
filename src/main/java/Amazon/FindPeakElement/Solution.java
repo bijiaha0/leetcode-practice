@@ -1,37 +1,41 @@
 package Amazon.FindPeakElement;
 
 public class Solution {
+
+    /**
+     * https://leetcode.com/problems/find-peak-element/
+     * <p>
+     * Input: nums = [1,2,3,1]
+     * Output: 2
+     * Explanation: 3 is a peak element and your function should return the index number 2.
+     */
     public int findPeakElement(int[] num) {
-        int n = num.length;
-        if (n == 1) {
-            return 0;
+
+        if (num == null || num.length < 2) {
+            return -1;
         }
-        int start = 0;
-        int end = n - 1;
-        while (start <= end) {
+
+        if (num[0] > num[1]) {
+            return num[0];
+        }
+
+        if (num[num.length - 1] > num[num.length - 2]) {
+            return num[num.length - 1];
+        }
+
+        int start = 1, end = num.length - 2;
+
+        while (start < end) {
             int mid = start + (end - start) / 2;
-            if ((mid == 0 || num[mid] >= num[mid - 1]) && (mid == n - 1 || num[mid] >= num[mid + 1])) {
-                return mid;
-            } else if (mid > 0 && num[mid - 1] > num[mid]) {
+            if (num[mid] < num[mid - 1]) {
                 end = mid - 1;
-            } else {
+            } else if (num[mid] < num[mid + 1]) {
                 start = mid + 1;
+            } else {
+                return mid;
             }
         }
-        return -1;
+        return end;
     }
-    //dfs
-    public int findPeakElement0(int[] nums) {
-        int n = nums.length;
-        return dfs(nums, 0, n - 1);
-    }
-    int dfs(int[] nums, int left, int right) {
-        if (left == right) return left;
-        int mid = left + (right - left) / 2;
-        if (nums[mid] > nums[mid + 1]) {
-            return dfs(nums, left, mid);
-        } else {
-            return dfs(nums, mid + 1, right);
-        }
-    }
+
 }
