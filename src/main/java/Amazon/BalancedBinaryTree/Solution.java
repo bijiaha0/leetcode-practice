@@ -18,7 +18,7 @@ class TreeNode {
 }
 
 public class Solution {
-    
+
     /**
      * @param root: The root of binary tree.
      * @return: True if this Binary tree is Balanced, or false.
