@@ -1,5 +1,10 @@
 package Amazon.SearchInRotatedSortedArray;
-// 搜索旋转排序数组
+
+/**
+ * https://www.jiuzhang.com/solutions/search-in-rotated-sorted-array/
+ *
+ * 搜索旋转排序数组
+ */
 public class Solution {
     public int search(int[] A, int target) {
         if (A == null || A.length == 0) {
@@ -26,12 +31,6 @@ public class Solution {
                     end = mid - 1;
                 }
             }
-        }
-        if (A[start] == target) {
-            return start;
-        }
-        if (A[end] == target) {
-            return end;
         }
         return -1;
     }

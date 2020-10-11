@@ -3,15 +3,11 @@ package LeetCode.BinarySearch;
 public class Solution {
 
     int search(int[] nums, int target) {
-
         int n = nums.length;
-
         if (nums == null || n == 0) {
             return -1;
         }
-
         return dfs(nums, 0, n - 1, target);
-
     }
 
     int dfs(int[] nums, int left, int right, int target) {
