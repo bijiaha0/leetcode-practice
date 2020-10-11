@@ -6,6 +6,7 @@ package Amazon.BalancedBinaryTree;
  * 一棵二叉树中每个节点的两个子树的深度相差不会超过1。
  */
 class TreeNode {
+
     public int val;
     public TreeNode left, right;
 
