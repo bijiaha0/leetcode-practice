@@ -1,50 +1,46 @@
 package Amazon.MinimumSubtree;
 
+
 /**
- * Author: bijiaha0
- * Date: 2019-03-03
- * Time: 15:36
- * Email: clickgwas@gmail.com
+ * https://www.jiuzhang.com/solutions/minimum-subtree/
  */
-class ResultType {
-    public TreeNode minSubtree;
-    public int sum, minSum;
-    public ResultType(TreeNode minSubtree, int minSum, int sum) {
-        this.minSubtree = minSubtree;
-        this.minSum = minSum;
-        this.sum = sum;
+class TreeNode {
+
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int x) {
+        val = x;
     }
+
 }
+
 public class Solution2 {
+    /**
+     * @param root the root of binary tree
+     * @return the root of the minimum subtree
+     */
+    public TreeNode minSubtree;
+    public int minSum = Integer.MAX_VALUE;
+
     public TreeNode findSubtree(TreeNode root) {
-        ResultType result = helper(root);
-        return result.minSubtree;
+        getSum(root);
+        return minSubtree;
     }
 
-    public ResultType helper(TreeNode node) {
-        if (node == null) {
-            return new ResultType(null, Integer.MAX_VALUE, 0);
+    private int getSum(TreeNode node){
+        if(node == null) {
+            return 0;
         }
-
-        ResultType leftResult = helper(node.left);
-        ResultType rightResult = helper(node.right);
-
-        ResultType result = new ResultType(
-                node,
-                leftResult.sum + rightResult.sum + node.val,
-                leftResult.sum + rightResult.sum + node.val
-        );
-
-        if (leftResult.minSum <= result.minSum) {
-            result.minSum = leftResult.minSum;
-            result.minSubtree = leftResult.minSubtree;
+        int left = getSum(node.left);
+        int right = getSum(node.right);
+        int curtSum = left + right + node.val;
+        if(curtSum < minSum) {
+            this.minSubtree = node;
+            this.minSum = curtSum;
         }
-
-        if (rightResult.minSum <= result.minSum) {
-            result.minSum = rightResult.minSum;
-            result.minSubtree = rightResult.minSubtree;
-        }
-
-        return result;
+        return curtSum;
     }
 }
+

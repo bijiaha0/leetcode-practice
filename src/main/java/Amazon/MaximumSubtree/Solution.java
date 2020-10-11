@@ -1,18 +1,18 @@
 package Amazon.MaximumSubtree;
+
 /**
- * Email: clickgwas@gmail.com
+ * https://www.jiuzhang.com/solutions/minimum-subtree/
  */
-/*
-* https://www.lintcode.com/problem/maximum-subtree/description
-* */
 class TreeNode {
     public int val;
     public TreeNode left, right;
+
     public TreeNode(int val) {
-     this.val = val;
-     this.left = this.right = null;
+        this.val = val;
+        this.left = this.right = null;
     }
 }
+
 public class Solution {
     public static TreeNode result = null;
     public static int maximum_weight = Integer.MIN_VALUE;
@@ -21,6 +21,7 @@ public class Solution {
         helper(root);
         return result;
     }
+
     public static int helper(TreeNode root) {
         if (root == null) {
             return 0;
@@ -33,6 +34,7 @@ public class Solution {
         }
         return left_weight + right_weight + root.val;
     }
+
     public static void main(String[] args) {
     }
 }

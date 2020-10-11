@@ -4,12 +4,6 @@ package Amazon.MinimumSubtree;
  * 给一棵二叉树, 找到和为最小的子树, 返回其根节点。
  * traverse + divide conquer
  */
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
 public class Solution {
     private TreeNode subtree = null;
     private int subtreeSum = Integer.MAX_VALUE;
