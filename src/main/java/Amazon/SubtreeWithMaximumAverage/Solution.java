@@ -1,6 +1,5 @@
 package Amazon.SubtreeWithMaximumAverage;
 /**
- * Email: clickgwas@gmail.com
  * https://www.jiuzhang.com/solutions/subtree-with-maximum-average/
  * 具有最大平均数的子树
  */
@@ -12,44 +11,45 @@ class TreeNode {
         this.left = this.right = null;
     }
 }
+
 public class Solution {
-    private class ResultType {
-        public int sum, size;
-        public ResultType(int sum, int size) {
-            this.sum = sum;
-            this.size = size;
-        }
-    }
-
-    private TreeNode subtree = null;
-    private ResultType subtreeResult = null;
-
     /**
-     * @param root the root of binary tree
-     * @return the root of the maximum average of subtree
+     * @param root: the root of binary tree
+     * @return: the root of the maximum average of subtree
      */
-    public TreeNode findSubtree2(TreeNode root) {
-        helper(root);
-        return subtree;
+    // 定义数据返回类型，包括子树的所有节点权值之和&子树节点数目
+    private class Result{
+        int sum, num;
+        public Result(int sum, int num) {
+            this.sum = sum;
+            this.num = num;
+        }
     }
 
-    private ResultType helper(TreeNode root) {
+    // maxAverage表示最大平均值子树的根结点
+    private TreeNode maxAverage = null;
+    // maxAverageData记录最大平均值子树的所有权值之和&子树节点数目
+    private Result maxAverageData = null;
+
+    private Result dfs(TreeNode root) {
         if (root == null) {
-            return new ResultType(0, 0);
+            return new Result(0, 0);
         }
-        // 分治法计算左右子树的平均值
-        ResultType left = helper(root.left);
-        ResultType right = helper(root.right);
-        // 当前subtree的结果是左右两颗子树的和的平均值加上自身
-        ResultType result = new ResultType(
-                left.sum + right.sum + root.val,
-                left.size + right.size + 1
-        );
-        // 打擂台比较得到最大平均值的子树
-        if (subtree == null || subtreeResult.sum * result.size < result.sum * subtreeResult.size) {
-            subtree = root;
-            subtreeResult = result;
+        // 分别递归求解左右子树的所有权值之和&子树节点数目
+        Result left = dfs(root.left);
+        Result right = dfs(root.right);
+
+        Result rootResult = new Result(left.sum + right.sum + root.val, left.num + right.num + 1);
+        // 如果最大平均值子树为空，或者当前子树平均值大于原maxAverage，更新maxAverage
+        if(maxAverage == null || maxAverageData.num * rootResult.sum > maxAverageData.sum * rootResult.num) {
+            maxAverage = root;
+            maxAverageData = rootResult;
         }
-        return result;
+        return rootResult;
+    }
+
+    public TreeNode findSubtree2(TreeNode root) {
+        dfs(root);
+        return maxAverage;
     }
 }
