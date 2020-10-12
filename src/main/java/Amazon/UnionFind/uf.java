@@ -17,8 +17,7 @@ public class uf {
         if(father[x]==x){
             return x;
         }
-        father[x] = find(father[x]);//递归----路径压缩
-        return father[x] ;
+        return father[x] = find(father[x]);//递归----路径压缩
     }
 
     //合并
