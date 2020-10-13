@@ -5,34 +5,27 @@ public class Solution {
 
     //验证子串是否包含目标串
     public Boolean valid(int[] sourceMap, int[] targetMap) {
-
         for (int i = 0; i < targetMap.length; i++) {
             if (targetMap[i] > sourceMap[i]) {
                 return false;
             }
         }
-
         return true;
-
     }
 
     //初始化TargetMap
     public void initTargetMap(int[] targetMap, String target) {
-
         for (int i = 0; i < target.length(); i++) {
             targetMap[target.charAt(i)]++;
         }
-
     }
 
     public String minWindow(String source, String target) {
-
         int i, j = 0, ans = Integer.MAX_VALUE;
         String minStr = "";
         int[] sourceMap = new int[256];
         int[] targetMap = new int[256];
         initTargetMap(targetMap, target);
-
         for (i = 0; i < source.length(); i++) {
             while (j < source.length() && !valid(sourceMap, targetMap)) {
                 sourceMap[source.charAt(j)]++;
@@ -46,9 +39,33 @@ public class Solution {
             }
             sourceMap[source.charAt(i)]--;
         }
-
         return minStr;
+    }
 
+
+    public String minWindow2(String s, String t) {
+        int[] map = new int[128];
+        for (char c : t.toCharArray()) {
+            map[c]++;
+        }
+        int start = 0, end = 0, minStart = 0, minLen = Integer.MAX_VALUE, counter = t.length();
+        while (end < s.length()) {
+            char c1 = s.charAt(end);
+            if (map[c1] > 0) counter--;
+            map[c1]--;
+            end++;
+            while (counter == 0) {
+                if (minLen > end - start) {
+                    minLen = end - start;
+                    minStart = start;
+                }
+                final char c2 = s.charAt(start);
+                map[c2]++;
+                if (map[c2] > 0) counter++;
+                start++;
+            }
+        }
+        return minLen == Integer.MAX_VALUE ? "" : s.substring(minStart, minStart + minLen);
     }
 
 }
